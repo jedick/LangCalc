@@ -1,6 +1,6 @@
 # LangCalc
 
-<img src="https://raw.githubusercontent.com/jedick/LangCalc/main/assets/icon-outline.svg" alt="LangCalc icon" width="100">
+<img src="https://raw.githubusercontent.com/jedick/LangCalc/main/assets/langcalc-icon-outline.svg" alt="LangCalc icon" width="100">
 
 A voice-driven calculator.
 Say "what's 2 times 20" and it does the math on-device, with no internet connection needed.
