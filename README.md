@@ -13,8 +13,14 @@ That split keeps answers reliable even from a very small model.
 
 ## Try it now
 
-The fastest way to try LangCalc is through
-[Google AI Edge Gallery](https://github.com/google-ai-edge/gallery),
+There are two ways to try LangCalc.
+The fastest way to see the model in action is to run the inference notebook (this launches the notebook with Colab's hosted runtime, not on-device):
+
+<a target="_blank" href="https://colab.research.google.com/github/jedick/LangCalc/blob/main/model/notebooks/LangCalc-inference.ipynb">
+<img src="https://www.tensorflow.org/images/colab_logo_32px.png" />Run LangCalc Inference in Google Colab</a><br><br>
+
+If you want the full on-device experience, including voice transcription and a calculator interface,
+then install the LangCalc custom task in [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery),
 Google's app for running on-device AI models:
 
 1. Install the AI Edge Gallery app.
