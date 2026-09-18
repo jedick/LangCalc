@@ -19,13 +19,14 @@ The fastest way to see the model in action is to run the inference notebook (thi
 <a target="_blank" href="https://colab.research.google.com/github/jedick/LangCalc/blob/main/model/notebooks/LangCalc-inference.ipynb">
 <img src="https://www.tensorflow.org/images/colab_logo_32px.png" />Run LangCalc Inference in Google Colab</a><br><br>
 
-If you want the full on-device experience, including voice transcription and a calculator interface,
-then install the LangCalc custom task in [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery),
+To run the model on your device, install the LangCalc custom task in [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery),
 Google's app for running on-device AI models:
 
 1. Install the AI Edge Gallery app.
 2. Add the LangCalc custom task (see [`app/gallery-task/`](app/gallery-task/) for setup steps).
 3. Open "Voice Calculator" from the home screen, pick a model, and start talking.
+
+The LangCalc task integrates with the voice transcription service on your device and provides a chat-like calculator interface to show the results.
 
 A standalone Android app is in progress; see [Roadmap](#roadmap) below.
 
@@ -54,7 +55,6 @@ Full results and methodology: [`model/evals/results.md`](model/evals/results.md)
 
 - [x] Fine-tuned FunctionGemma model
 - [x] Working demo via Google AI Edge Gallery
-- [ ] Hosted demo on Hugging Face (Gradio)
 - [ ] Standalone Android app
 - [ ] Multilingual support (beyond English)
 
@@ -65,12 +65,10 @@ LangCalc/
 ├── app/
 │   ├── gallery-task/     # plugin for Google AI Edge Gallery
 │   └── android/          # standalone Android app [planned]
-├── model/
-│   ├── notebooks/        # fine-tuning and inference notebooks (Colab)
-│   ├── data/             # test data
-│   ├── evals/            # evaluation results
-└── deploy/
-    └── huggingface/      # Gradio demo [planned]
+└── model/
+    ├── notebooks/        # fine-tuning and inference notebooks (Colab)
+    ├── data/             # training and test data
+    └── evals/            # evaluation results
 ```
 
 ## License

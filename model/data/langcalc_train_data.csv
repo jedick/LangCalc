@@ -1,0 +1,161 @@
+category,prompt,function,x,y
+"whole numbers","Add 10 and 20",add,10,20
+"whole numbers","Add ten and twenty",add,10,20
+"whole numbers","What is 2 minus 3?",subtract,2,3
+"whole numbers","What is two minus three?",subtract,2,3
+"whole numbers","Calculate 5 times 7",multiply,5,7
+"whole numbers","Calculate five times 7",multiply,5,7
+"whole numbers","What is 2 divided by 10",divide,2,10
+"whole numbers","What is two divided by ten",divide,2,10
+decimals,"1.5 plus 2.5",add,1.5,2.5
+decimals,"One point five plus two point five",add,1.5,2.5
+decimals,"Subtract 1.5 from 2.5",subtract,2.5,1.5
+decimals,"Subtract one point five from 2.5",subtract,2.5,1.5
+decimals,"Multiply 8 and 0.25",multiply,8,0.25
+decimals,"Multiply eight and point two five",multiply,8,0.25
+decimals,"Divide 50 by 0.1",divide,50,0.1
+decimals,"Divide fifty by zero-point-one",divide,50,0.1
+"alternative wordings","Put together eleven and twenty-two",add,11,22
+"alternative wordings","Combine one hundred and eighty-eight",add,100,88
+"alternative wordings","Take 37 away from 93",subtract,93,37
+"alternative wordings","What's sixty less than 600?",subtract,600,60
+"alternative wordings","Take 39 five times",multiply,39,5
+"alternative wordings","Square of twenty two",multiply,22,22
+"alternative wordings","How many times does eight go into one hundred?",divide,100,8
+"alternative wordings","Seventy five over twenty",divide,75,20
+units,"Total weight of 15.5 and 19.5 kilos",add,15.5,19.5
+units,"Time for thirty five point six and thirty three point two seconds",add,35.6,33.2
+units,"Two eggs short of a dozen",subtract,12,2
+units,"How many signatures to get from eight hundred to one thousand?",subtract,1000,800
+units,"Area of a five point five by four meter room",multiply,5.5,4
+units,"Space filled by twelve 1.5 square-foot tiles",multiply,12,1.5
+units,"A hundred and five dollars split between three people",divide,105,5
+units,"How many buckets of 20 apples make two hundred",divide,200,20
+"whole numbers","Add sixty-four and one hundred and thirty-one",add,64,131
+"whole numbers","What's two hundred and fifteen plus forty-eight?",add,215,48
+"whole numbers","Subtract nineteen from eighty-eight",subtract,88,19
+"whole numbers","What is one hundred and seven take away twenty-nine?",subtract,107,29
+"whole numbers","Multiply eight hundred and twelve by three",multiply,812,3
+"whole numbers","What's seven hundred and forty times five?",multiply,740,5
+"whole numbers","How many times does nine fit into three hundred and fifteen?",divide,315,9
+"whole numbers","Divide two hundred and eighty-eight by twelve",divide,288,12
+decimals,"Subtract zero point four two from five point eight",subtract,5.8,0.42
+decimals,"What's four point seven times three point three?",multiply,4.7,3.3
+decimals,"What is two hundred point five divided by five point five?",divide,200.5,5.5
+decimals,"Add zero point eight five to one point one five",add,0.85,1.15
+decimals,"Take one point two five away from nine point six",subtract,9.6,1.25
+"alternative wordings","Take twenty-two three times over",multiply,22,3
+"alternative wordings","Repeat thirty-one six times",multiply,31,6
+"alternative wordings","What's the square of nineteen?",multiply,19,19
+"alternative wordings","Square eight for me",multiply,8,8
+"alternative wordings","Split four hundred and eighty into groups of six",divide,480,6
+"alternative wordings","Break two hundred and ten into groups of fifteen",divide,210,15
+"alternative wordings","How many twelve-dollar tickets can I get with 156 dollars?",divide,156,12
+"alternative wordings","How many six-dollar snacks can I buy with 90 dollars?",divide,90,6
+units,"We sold 81 tickets in the morning and 60 in the evening; what's the total?",add,81,60
+units,"I biked twelve point five miles yesterday and nine point five today, what's the total distance?",add,12.5,9.5
+units,"The jug had 38 liters and I poured out 14, how much remains?",subtract,38,14
+units,"The race is 260 kilometers and we've covered ninety-five so far, how much is left?",subtract,260,95
+units,"Each carton holds 30 eggs, how many eggs in twenty-two cartons?",multiply,30,22
+units,"The garden bed is nine point five feet by six feet, what's the area?",multiply,9.5,6
+units,"The barrel holds 210 liters, how many 7-liter jugs is that?",divide,210,7
+units,"We're dividing a 144 dollar tab evenly among six friends",divide,144,6
+units,"The flight is 1,200 miles, and we've flown three hundred so far; how much further?",subtract,1200,300
+units,"Add up the two loads: 3.25 tons and 4.75 tons",add,3.25,4.75
+units,"The pool holds 500 gallons, how many 25-gallon jugs would fill it?",divide,500,25
+"magnitude variation","0 plus 0",add,0,0
+"magnitude variation","1 plus 10",add,1,10
+"magnitude variation","2 plus 20",add,2,20
+"magnitude variation","3 plus 30",add,3,30
+"magnitude variation","4 plus 40",add,4,40
+"magnitude variation","5 plus 50",add,5,50
+"magnitude variation","6 plus 60",add,6,60
+"magnitude variation","7 plus 70",add,7,70
+"magnitude variation","8 plus 80",add,8,80
+"magnitude variation","9 plus 90",add,9,90
+"magnitude variation","10 plus 100",add,10,100
+"magnitude variation","20 plus 200",add,20,200
+"magnitude variation","30 plus 300",add,30,300
+"magnitude variation","40 plus 400",add,40,400
+"magnitude variation","50 plus 500",add,50,500
+"magnitude variation","60 plus 600",add,60,600
+"magnitude variation","70 plus 700",add,70,700
+"magnitude variation","80 plus 800",add,80,800
+"magnitude variation","90 plus 900",add,90,900
+"magnitude variation","100 plus 1000",add,100,1000
+"magnitude variation","200 plus 2000",add,200,2000
+"magnitude variation","300 plus 3000",add,300,3000
+"magnitude variation","400 plus 4000",add,400,4000
+"magnitude variation","500 plus 5000",add,500,5000
+"magnitude variation","600 plus 6000",add,600,6000
+"magnitude variation","700 plus 7000",add,700,7000
+"magnitude variation","800 plus 8000",add,800,8000
+"magnitude variation","900 plus 9000",add,900,9000
+"magnitude variation","1000 plus 10000",add,1000,10000
+"magnitude variation","5000 plus 50000",add,5000,50000
+"magnitude variation","10000 plus 100000",add,10000,100000
+"magnitude variation","100000 plus 1000000",add,100000,1000000
+units,"In the school fundraiser, one hundred and twenty-three tickets were sold on Monday and forty-six on Tuesday, what's the total?",add,123,46
+units,"For the quilt I used two hundred and eighteen blue squares and thirty-five green squares, how many squares in total?",add,218,35
+units,"Add up the trip distance: three hundred and seven miles on the highway and twenty-nine on back roads",add,307,29
+units,"The grocery bill from produce was one hundred and sixteen dollars and from the deli was twenty-two dollars, what's the combined total?",add,116,22
+units,"The sprint had two hundred and eighty-four story points planned and the team completed sixty-one, how many points remain?",subtract,284,61
+units,"The semester requires one hundred and ninety-two hours of lab work, and I've logged thirty-eight so far, how many hours are left?",subtract,192,38
+units,"I bought one hundred and seventy-five beads for the bracelet and used one hundred and twelve, how many are left over?",subtract,175,112
+units,"The couch was priced at three hundred and sixty dollars and the store took off forty-five for the sale, what's the sale price?",subtract,360,45
+units,"Each server rack draws one hundred and thirty-six watts, how many watts do eight racks draw?",multiply,136,8
+units,"Each classroom needs one hundred and twenty-four textbooks, how many textbooks for six classrooms?",multiply,124,6
+units,"Each scarf takes one hundred and eighteen yards of yarn, how much yarn do four scarves need?",multiply,118,4
+units,"The truck can carry two hundred and nine crates per trip, how many crates in three trips?",multiply,209,3
+units,"The department needs to split three hundred and sixty dollars in office supplies evenly among nine teams, how much per team?",divide,360,9
+units,"There are two hundred and sixteen students to split evenly into eight classes, how many students per class?",divide,216,8
+units,"I have one hundred and forty-four beads to divide evenly among six bracelets, how many beads per bracelet?",divide,144,6
+units,"The shipment of two hundred and ten mugs needs to be packed into boxes of fourteen, how many boxes are needed?",divide,210,14
+units,"Fourteen customers checked in before noon and twenty-two after noon, what's the total number of guests?",add,14,22
+units,"The classroom has twelve boys and fifteen girls, how many students are there in total?",add,12,15
+units,"I knitted eight rows before dinner and eleven rows after, how many rows did I finish today?",add,8,11
+units,"We drove ninety miles before lunch and sixty miles after, what's the total distance for the day?",add,90,60
+units,"The first store had thirteen jackets in stock and the second store had twenty-one, how many jackets between the two stores?",add,13,21
+units,"The design team finished nineteen mockups this week and the dev team finished twenty-six, what's the combined output?",add,19,26
+units,"Nine bugs were fixed on Monday and fourteen more on Tuesday, how many bugs are fixed so far?",add,9,14
+units,"The vineyard harvested three hundred and ten pounds of grapes from the north field and two hundred and eighty from the south field, what's the total harvest?",add,310,280
+units,"One class read twenty-three books over the summer and another class read seventeen, what's the combined count?",add,23,17
+units,"The first coat of paint used two point five gallons and the second coat used one point eight, how much paint was used in total?",add,2.5,1.8
+units,"The delivery van dropped off forty-five packages downtown and thirty-two in the suburbs, how many packages were delivered altogether?",add,45,32
+units,"The morning shift sold sixteen loaves and the evening shift sold twenty-nine, what's the day's total?",add,16,29
+units,"I walked two point three miles in the morning and one point six miles in the evening, what's my total distance for the day?",add,2.3,1.6
+units,"I swam eight hundred meters on Monday and six hundred on Wednesday, how far did I swim this week?",add,800,600
+units,"The workshop had thirty-one attendees in the first session and eighteen in the second, how many people came through in total?",add,31,18
+units,"The carpenter cut twenty-six boards on Thursday and thirty-three on Friday, how many boards were cut across both days?",add,26,33
+"alternative wordings","Add another 12 pages to the 48 we've already written",add,48,12
+"alternative wordings","Pile on another 7 crates on top of the 33 we already loaded",add,33,7
+"alternative wordings","Tack on another 9 dollars to the 61 we've already spent",add,61,9
+"alternative wordings","We already drove 150 miles, tack on another 40 for the detour",add,150,40
+"alternative wordings","There were already 88 emails in the inbox, and 6 more just came in",add,88,6
+"alternative wordings","We've already planted 27 trees, plant another 13 today",add,27,13
+"alternative wordings","The invoice already totals 210 dollars, add another 35 for shipping",add,210,35
+"alternative wordings","We already had 19 volunteers, sign up another 8 for the weekend",add,19,8
+"whole numbers","What is two hundred and fourteen take away thirty-eight?",subtract,214,38
+"whole numbers","Take fifty-six away from three hundred and one",subtract,301,56
+"whole numbers","What's four hundred and thirty take away ninety-seven?",subtract,430,97
+"whole numbers","Nine hundred and twelve take away three hundred and six, what's left?",subtract,912,306
+"alternative wordings","What's thirteen times itself?",multiply,13,13
+"alternative wordings","What does thirty-six times itself equal?",multiply,36,36
+"alternative wordings","Multiply seven by itself",multiply,7,7
+"alternative wordings","What's one hundred and four times itself?",multiply,104,104
+"magnitude variation","subtract 20 from 2",subtract,2,20
+"magnitude variation","subtract 60 from 6",subtract,6,60
+"magnitude variation","subtract 500 from 50",subtract,50,500
+"magnitude variation","subtract 9000 from 900",subtract,900,9000
+"magnitude variation","subtract 3 from 30",subtract,30,3
+"magnitude variation","subtract 7 from 70",subtract,70,7
+"magnitude variation","subtract 40 from 400",subtract,400,40
+"magnitude variation","subtract 600 from 6000",subtract,6000,600
+"magnitude variation","divide 5 by 50",divide,5,50
+"magnitude variation","divide 8 by 80",divide,8,80
+"magnitude variation","divide 30 by 300",divide,30,300
+"magnitude variation","divide 90 by 900",divide,90,900
+"magnitude variation","divide 400 by 4",divide,400,4
+"magnitude variation","divide 700 by 7",divide,700,7
+"magnitude variation","divide 6000 by 60",divide,6000,60
+"magnitude variation","divide 50 by 5000",divide,50,5000
