@@ -1,0 +1,51 @@
+origin,category,prompt,function,x,y
+en,"whole numbers",59加112等于多少？,add,59,112
+en,"whole numbers",81拿掉17是多少？,subtract,81,17
+en,"whole numbers",906的4倍是多少？,multiply,906,4
+en,"whole numbers",220是11的多少倍？,divide,220,11
+en,decimals,9.3加上4.8,add,4.8,9.3
+en,decimals,3.2拿掉0.65,subtract,3.2,0.65
+en,decimals,6.1的2.4倍是多少？,multiply,6.1,2.4
+en,decimals,12.6除以0.3,divide,12.6,0.3
+en,decimals,100.5除以2.5是多少了？,divide,100.5,2.5
+en,"alternative wordings",在已经有的230上再加上15,add,230,15
+en,"alternative wordings",310去掉45,subtract,310,45
+en,"alternative wordings",17的4倍,multiply,17,4
+en,"alternative wordings",13的平方是多少？,multiply,13,13
+en,units,上午来了81个人，下午来了60个人，一共多少人？,add,81,60
+en,units,路程是342英里，已经开了190英里，还要开多少英里？,subtract,342,190
+en,units,一个盒子装24个易拉罐，18个盒子能装多少易拉罐？,multiply,24,18
+en,"whole numbers",94加117,add,94,117
+en,"whole numbers",231加上16是多少？,add,231,16
+en,"whole numbers",126减去14,subtract,126,14
+en,"whole numbers",340拿掉19剩多少？,subtract,340,19
+en,"whole numbers",108乘以6,multiply,108,6
+en,"whole numbers",415的3倍是多少？,multiply,415,3
+en,"whole numbers",260是13的多少倍？,divide,260,13
+en,"whole numbers",9的多少倍是198？,divide,198,9
+en,"whole numbers",312除以4,divide,312,4
+en,"whole numbers",115除以5是多少？,divide,115,5
+en,"whole numbers",合并116和243,add,116,243
+en,units,我们从第一棵树上摘了18个苹果，第二棵树上摘了27个苹果，一共多少个苹果？,add,18,27
+en,units,"星期一停车费4.50,星期二停车费6.25,一共用了多少钱？",add,4.5,6.25
+en,units,星期六跑了5.2千米，星期天跑了3.8千米，周末我一共跑了多远？,add,5.2,3.8
+en,units,一个盒子是14.5磅，另一个是22.5磅，一起多重？,add,14.5,22.5
+en,units,"面包店做了36条面包给农贸市场,24条面包给咖啡馆，一起有多少条面包？",add,36,24
+en,"alternative wordings",在我们已经花了42美金上再多花8美金,add,42,8
+en,"alternative wordings",购物车里面已经有了27磅的东西，再额外加上3磅,add,27,3
+en,"alternative wordings",我们已经走了150英里，绕路还要走40英里,add,150,40
+en,"alternative wordings",已经装好了60个盒子，再往上装25个,add,60,25
+en,"alternative wordings",账户里已经有了500美金，再存入75美金,add,500,75
+en,"alternative wordings",41的平方是多少？,multiply,41,41
+en,"alternative wordings",50的50倍是多少？,multiply,50,50
+en,"magnitude variation",1减去10,subtract,1,10
+en,"magnitude variation",2乘以20,multiply,2,20
+en,"magnitude variation",5减去50,subtract,5,50
+en,"magnitude variation",9减去90,subtract,9,90
+en,"magnitude variation",20除以200,divide,20,200
+en,"magnitude variation",40减去400,subtract,40,400
+en,"magnitude variation",80减去800,subtract,80,800
+en,"magnitude variation",300减去3000,subtract,300,3000
+en,"magnitude variation",700减去7000,subtract,700,7000
+en,"magnitude variation",5000减去50000,subtract,5000,50000
+en,"magnitude variation",10000乘以100000,multiply,10000,100000

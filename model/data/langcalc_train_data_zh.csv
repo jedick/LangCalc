@@ -1,0 +1,161 @@
+origin,category,prompt,function,x,y
+en,"whole numbers",把10和20加起来,add,10,20
+en,"whole numbers",10加20等于多少,add,10,20
+en,"whole numbers",2减3等于多少？,subtract,2,3
+en,"whole numbers",2减去3是多少？,subtract,2,3
+en,"whole numbers",算一下5乘以7,multiply,5,7
+en,"whole numbers",帮我算算5乘7,multiply,5,7
+en,"whole numbers",2除以10等于多少,divide,2,10
+en,"whole numbers",2除以10得多少,divide,2,10
+en,decimals,1.5加2.5,add,1.5,2.5
+en,decimals,1.5加上2.5等于多少,add,1.5,2.5
+en,decimals,2.5减去1.5,subtract,2.5,1.5
+en,decimals,从2.5里减掉1.5,subtract,2.5,1.5
+en,decimals,8乘以0.25,multiply,8,0.25
+en,decimals,8和0.25相乘,multiply,8,0.25
+en,decimals,50除以0.1,divide,50,0.1
+en,decimals,用50除以0.1，结果是多少,divide,50,0.1
+en,"alternative wordings",11和22一共是多少,add,11,22
+en,"alternative wordings",把100和88合在一起是多少,add,100,88
+en,"alternative wordings",93里去掉37还剩多少,subtract,93,37
+en,"alternative wordings",比600少60是多少？,subtract,600,60
+en,"alternative wordings",39的5倍是多少,multiply,39,5
+en,"alternative wordings",22的平方,multiply,22,22
+en,"alternative wordings",100里面有几个8？,divide,100,8
+en,"alternative wordings",20分之75是多少,divide,75,20
+en,units,15.5公斤和19.5公斤，总重量是多少？,add,15.5,19.5
+en,units,先后用时35.6秒和33.2秒，总共多少秒？,add,35.6,33.2
+en,units,1打鸡蛋少了2个，还剩几个？,subtract,12,2
+en,units,签名从800个到1000个，还差多少个？,subtract,1000,800
+en,units,长5.5米、宽4米的房间，面积是多少？,multiply,5.5,4
+en,units,12块1.5平方米的瓷砖，一共能铺多大面积？,multiply,12,1.5
+en,units,105元平分给5个人，每人多少钱？,divide,105,5
+en,units,200个苹果，每桶装20个，能装几桶？,divide,200,20
+en,"whole numbers",把64和131相加,add,64,131
+en,"whole numbers",215加48是多少？,add,215,48
+en,"whole numbers",从88里面减掉19,subtract,88,19
+en,"whole numbers",107拿走29还剩多少？,subtract,107,29
+en,"whole numbers",812乘3等于多少,multiply,812,3
+en,"whole numbers",740乘以5得多少？,multiply,740,5
+en,"whole numbers",315里有几个9？,divide,315,9
+en,"whole numbers",288除以12等于多少,divide,288,12
+en,decimals,5.8减去0.42等于多少,subtract,5.8,0.42
+en,decimals,4.7乘以3.3是多少？,multiply,4.7,3.3
+en,decimals,200.5除以5.5等于多少？,divide,200.5,5.5
+en,decimals,把0.85和1.15加起来,add,0.85,1.15
+en,decimals,9.6拿掉1.25还剩多少,subtract,9.6,1.25
+en,"alternative wordings",把22变成原来的3倍,multiply,22,3
+en,"alternative wordings",31的6倍是多少,multiply,31,6
+en,"alternative wordings",19的平方是多少？,multiply,19,19
+en,"alternative wordings",帮我算下8的平方,multiply,8,8
+en,"alternative wordings",把480分成每组6个，能分几组？,divide,480,6
+en,"alternative wordings",210按每15个一组来分，能分几组？,divide,210,15
+en,"alternative wordings",156元能买几张12元的票？,divide,156,12
+en,"alternative wordings",90块钱能买几个6块钱的零食？,divide,90,6
+en,units,我们上午卖了81张票，晚上卖了60张，一共卖了多少张？,add,81,60
+en,units,我昨天骑了12.5公里，今天骑了9.5公里，一共骑了多少公里？,add,12.5,9.5
+en,units,桶里有38升水，倒出去14升，还剩多少？,subtract,38,14
+en,units,比赛全程260公里，我们已经跑了95公里，还剩多少公里？,subtract,260,95
+en,units,每箱装30个鸡蛋，22箱一共有多少个鸡蛋？,multiply,30,22
+en,units,花坛长9.5米，宽6米，面积是多少？,multiply,9.5,6
+en,units,这个桶能装210升，相当于多少个7升的壶？,divide,210,7
+en,units,144元的账单，6个朋友AA，每人多少钱？,divide,144,6
+en,units,航程1200公里，我们已经飞了300公里，还剩多少？,subtract,1200,300
+en,units,甲车载了3.25吨，乙车载了4.75吨，合计多少吨？,add,3.25,4.75
+en,units,水池能装500升，用25升的桶来装，要几桶才能装满？,divide,500,25
+en,"magnitude variation",0加0,add,0,0
+en,"magnitude variation",1加10,add,1,10
+en,"magnitude variation",2加20,add,2,20
+en,"magnitude variation",3加30,add,3,30
+en,"magnitude variation",4加40,add,4,40
+en,"magnitude variation",5加50,add,5,50
+en,"magnitude variation",6加60,add,6,60
+en,"magnitude variation",7加70,add,7,70
+en,"magnitude variation",8加80,add,8,80
+en,"magnitude variation",9加90,add,9,90
+en,"magnitude variation",10加100,add,10,100
+en,"magnitude variation",20加200,add,20,200
+en,"magnitude variation",30加300,add,30,300
+en,"magnitude variation",40加400,add,40,400
+en,"magnitude variation",50加500,add,50,500
+en,"magnitude variation",60加600,add,60,600
+en,"magnitude variation",70加700,add,70,700
+en,"magnitude variation",80加800,add,80,800
+en,"magnitude variation",90加900,add,90,900
+en,"magnitude variation",100加1000,add,100,1000
+en,"magnitude variation",200加2000,add,200,2000
+en,"magnitude variation",300加3000,add,300,3000
+en,"magnitude variation",400加4000,add,400,4000
+en,"magnitude variation",500加5000,add,500,5000
+en,"magnitude variation",600加6000,add,600,6000
+en,"magnitude variation",700加7000,add,700,7000
+en,"magnitude variation",800加8000,add,800,8000
+en,"magnitude variation",900加9000,add,900,9000
+en,"magnitude variation",1000加10000,add,1000,10000
+en,"magnitude variation",5000加50000,add,5000,50000
+en,"magnitude variation",10000加100000,add,10000,100000
+en,"magnitude variation",100000加1000000,add,100000,1000000
+en,units,学校募捐活动中，周一卖出了123张票，周二卖出了46张，一共卖了多少张？,add,123,46
+en,units,做被子用了218块蓝色方块和35块绿色方块，一共用了多少块？,add,218,35
+en,units,算一下总行程：高速上开了307公里，小路上开了29公里,add,307,29
+en,units,超市账单里，蔬果116元，熟食22元，总共多少钱？,add,116,22
+en,units,这个迭代计划了284个故事点，团队完成了61个，还剩多少个？,subtract,284,61
+en,units,这学期要求完成192小时的实验课，我已经做了38小时，还差多少小时？,subtract,192,38
+en,units,我买了175颗珠子做手链，用掉了112颗，还剩多少颗？,subtract,175,112
+en,units,沙发标价360元，促销时优惠了45元，现价是多少？,subtract,360,45
+en,units,每个服务器机柜功率136瓦，8个机柜一共多少瓦？,multiply,136,8
+en,units,每间教室需要124本教材，6间教室一共要多少本？,multiply,124,6
+en,units,每条围巾要用118米毛线，4条围巾一共要多少米？,multiply,118,4
+en,units,卡车每趟能装209箱，3趟一共能运多少箱？,multiply,209,3
+en,units,360元的办公用品预算要平均分给9个小组，每组分多少？,divide,360,9
+en,units,216名学生平均分到8个班，每班多少人？,divide,216,8
+en,units,144颗珠子平均做成6条手链，每条用多少颗？,divide,144,6
+en,units,210个杯子按每箱14个来装，需要多少个箱子？,divide,210,14
+en,units,中午前来了14位顾客，中午后来了22位，一共有多少位客人？,add,14,22
+en,units,班里有12个男生和15个女生，一共多少名学生？,add,12,15
+en,units,晚饭前织了8行，晚饭后织了11行，今天一共织了多少行？,add,8,11
+en,units,午饭前开了90公里，午饭后开了60公里，今天一共开了多少公里？,add,90,60
+en,units,甲店有13件夹克，乙店有21件，合计多少件？,add,13,21
+en,units,设计组这周完成了19个设计稿，开发组完成了26个，合计多少个？,add,19,26
+en,units,周一修了9个bug，周二又修了14个，到目前一共修了多少个？,add,9,14
+en,units,葡萄园北边的地收了310斤葡萄，南边的地收了280斤，一共收了多少斤？,add,310,280
+en,units,A班暑假读了23本书，B班读了17本，合计多少本？,add,23,17
+en,units,底漆用了2.5升，面漆用了1.8升，一共用了多少升？,add,2.5,1.8
+en,units,快递车在市区送了45个包裹，在郊区送了32个，一共送了多少个？,add,45,32
+en,units,早班卖了16个面包，晚班卖了29个，今天一共卖了多少个？,add,16,29
+en,units,我早上走了2.3公里，晚上走了1.6公里，今天一共走了多少公里？,add,2.3,1.6
+en,units,我周一游了800米，周三游了600米，这周一共游了多少米？,add,800,600
+en,units,工作坊上午场有31人参加，下午场有18人，一共来了多少人？,add,31,18
+en,units,木匠周四锯了26块木板，周五锯了33块，周四和周五合计锯了多少块？,add,26,33
+en,"alternative wordings",已经写了48页，再加12页，一共多少页？,add,48,12
+en,"alternative wordings",已经装了33箱，再往上加7箱，一共多少箱？,add,33,7
+en,"alternative wordings",已经花了61元，再加9元，一共多少？,add,61,9
+en,"alternative wordings",已经开了150公里，绕路又多开了40公里，一共多少公里？,add,150,40
+en,"alternative wordings",收件箱里已经有88封邮件，刚又来了6封，现在有多少封？,add,88,6
+en,"alternative wordings",已经种了27棵树，今天再种13棵，一共多少棵？,add,27,13
+en,"alternative wordings",发票已经是210元，再加35元运费，总共多少？,add,210,35
+en,"alternative wordings",已经有19名志愿者，周末再招8名，一共多少名？,add,19,8
+en,"whole numbers",214减38等于多少？,subtract,214,38
+en,"whole numbers",从301里拿走56，还剩多少？,subtract,301,56
+en,"whole numbers",430去掉97是多少？,subtract,430,97
+en,"whole numbers",912减去306，剩下多少？,subtract,912,306
+en,"alternative wordings",13乘以它本身是多少？,multiply,13,13
+en,"alternative wordings",36自己乘自己等于多少？,multiply,36,36
+en,"alternative wordings",7和它自己相乘,multiply,7,7
+en,"alternative wordings",104乘以它自己是多少？,multiply,104,104
+en,"magnitude variation",2减20,subtract,2,20
+en,"magnitude variation",从6里减去60,subtract,6,60
+en,"magnitude variation",50减去500,subtract,50,500
+en,"magnitude variation",从900里减掉9000,subtract,900,9000
+en,"magnitude variation",30减3,subtract,30,3
+en,"magnitude variation",从70里减去7,subtract,70,7
+en,"magnitude variation",400减去40,subtract,400,40
+en,"magnitude variation",6000减600,subtract,6000,600
+en,"magnitude variation",5除以50,divide,5,50
+en,"magnitude variation",用8除以80,divide,8,80
+en,"magnitude variation",30除以300,divide,30,300
+en,"magnitude variation",用90除以900,divide,90,900
+en,"magnitude variation",400除以4,divide,400,4
+en,"magnitude variation",用700除以7,divide,700,7
+en,"magnitude variation",6000除以60,divide,6000,60
+en,"magnitude variation",用50除以5000,divide,50,5000
