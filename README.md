@@ -43,13 +43,13 @@ Evaluating the function call happens with plain arithmetic code, not another mod
 
 ## Fine-tuning and evaluation
 
-For the fine-tuning process, see [`model/notebooks/`](model/notebooks/).
+For the fine-tuning and evaluation notebooks, see [`model/notebooks/`](model/notebooks/).
 
-The evaluations compare the fine-tuned FunctionGemma (270M) against a larger general-purpose model
-(Gemma 4 E2B) on the same set of spoken calculator requests.
+The evaluations compare the base and fine-tuned FunctionGemma (270M) against a larger general-purpose model
+(Gemma 4 E2B-it) on the same set of spoken calculator requests.
 Fine-tuning a small model gets most of the way to what a much larger model can do at a fraction of the size.
 
-Full results and methodology: [`model/evals/results.md`](model/evals/results.md).
+<img src="https://chnosz.net/guest/LangCalc/langcalc-test-results_v01.png" alt="LangCalc test results" width="70%">
 
 ## Roadmap
 
