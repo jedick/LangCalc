@@ -17,7 +17,7 @@ There are two ways to try LangCalc.
 The fastest way to see the model in action is to run the inference notebook (this launches the notebook with Colab's hosted runtime, not on-device):
 
 <a target="_blank" href="https://colab.research.google.com/github/jedick/LangCalc/blob/main/model/notebooks/LangCalc-inference.ipynb">
-<img src="https://www.tensorflow.org/images/colab_logo_32px.png" />Run LangCalc Inference in Google Colab</a><br><br>
+<img src="https://www.tensorflow.org/images/colab_logo_32px.png" />Run LangCalc inference in Google Colab</a><br><br>
 
 To run the model on your device, install the LangCalc custom task in [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery),
 Google's app for running on-device AI models:
@@ -45,11 +45,24 @@ Evaluating the function call happens with plain arithmetic code, not another mod
 
 For the fine-tuning and evaluation notebooks, see [`model/notebooks/`](model/notebooks/).
 
-The evaluations compare the base and fine-tuned FunctionGemma (270M) against a larger general-purpose model
-(Gemma 4 E2B-it) on the same set of spoken calculator requests.
-Fine-tuning a small model gets most of the way to what a much larger model can do at a fraction of the size.
+🌍 The LangCalc training and test data are multilingual, with both English (en) and Chinese (zh) prompts for the same calculator functions.
 
-<img src="https://chnosz.net/guest/LangCalc/langcalc-test-results_v01.png" alt="LangCalc test results" width="70%">
+The base FunctionGemma model performs poorly on English prompts (spoken calculator requests), achieving only 20% correct function calls.
+Fine-tuning with English prompts yields a large performance jump,
+while fine-tuning with *both* English and Chinese prompts gives the best results for this small model.
+
+<img src="https://chnosz.net/guest/LangCalc/langcalc-test-results_v02.png" alt="LangCalc test results" width="70%">
+
+The strong performance of the `en.zh` model trained on two languages extends to the Chinese test data.
+
+| Model | % Correct (en) | % Correct (zh) |
+|-|-|-|
+| jedick/functiongemma-langcalc-en.zh | 81 | 89 |
+| jedick/functiongemma-langcalc-en | 63 | 85 |
+| jedick/functiongemma-langcalc-zh | 38 | 84 |
+| google/gemma-4-E2B-it | 100 | 100 |
+
+Fine-tuning the small FunctionGemma model (270M) gets most of the way to what a much larger model (Gemma 4 E2B-it) can do at a fraction of the size, making it suitable for mobile deployment.
 
 ## Roadmap
 
@@ -67,8 +80,7 @@ LangCalc/
 │   └── android/          # standalone Android app [planned]
 └── model/
     ├── notebooks/        # fine-tuning and inference notebooks (Colab)
-    ├── data/             # training and test data
-    └── evals/            # evaluation results
+    └── data/             # training and test data
 ```
 
 ## License
