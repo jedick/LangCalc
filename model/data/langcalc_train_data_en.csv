@@ -159,3 +159,163 @@ en,"magnitude variation","divide 400 by 4",divide,400,4
 en,"magnitude variation","divide 700 by 7",divide,700,7
 en,"magnitude variation","divide 6000 by 60",divide,6000,60
 en,"magnitude variation","divide 50 by 5000",divide,50,5000
+zh,"万 and 亿 magnitudes","Made 30 thousand last year and 50 thousand this year, what does that add up to?",add,30000,50000
+zh,"万 and 亿 magnitudes","35 thousand add 12 thousand equals how much",add,35000,12000
+zh,"万 and 亿 magnitudes","The video got 25 thousand views yesterday and 38 thousand today, what's the running total?",add,25000,38000
+zh,"万 and 亿 magnitudes","Beijing apartment is 5 million, the parking space next to it 300 thousand, buy together need how much money?",add,5000000,300000
+zh,"万 and 亿 magnitudes","a hundred million plus 50 million",add,100000000,50000000
+zh,"万 and 亿 magnitudes","50 million less 20 million, what's left",subtract,50000000,20000000
+zh,"万 and 亿 magnitudes","100 million subtract 30 million equal how much",subtract,100000000,30000000
+zh,"万 and 亿 magnitudes","I had 80 thousand saved and the car set me back 55 thousand, how much is left in the account?",subtract,80000,55000
+zh,"万 and 亿 magnitudes","12,000 people in the village and 4000 went off to work in the cities, how many are still home?",subtract,12000,4000
+zh,"万 and 亿 magnitudes","Company registered capital 3 million, already received 1.2 million, still lack how much?",subtract,3000000,1200000
+zh,"万 and 亿 magnitudes","what's 25 thousand times four",multiply,25000,4
+zh,"万 and 亿 magnitudes","My salary one month 15 thousand, one year 12 months, so year salary is how much?",multiply,15000,12
+zh,"万 and 亿 magnitudes","Eight of us each chipped in 30 thousand, what's the grand total?",multiply,30000,8
+zh,"万 and 亿 magnitudes","Triple 150 million",multiply,150000000,3
+zh,"万 and 亿 magnitudes","The Spring Festival rush moves 20 million travelers a day for 40 days, how many trips is that in total?",multiply,20000000,40
+zh,"万 and 亿 magnitudes","120 million split 4 ways",divide,120000000,4
+zh,"万 and 亿 magnitudes","100 thousand divide 50 thousand is how many?",divide,100000,50000
+zh,"万 and 亿 magnitudes","A 6 million project split evenly between three partners, what's each one's cut?",divide,6000000,3
+zh,"万 and 亿 magnitudes","Spread 1.4 billion people evenly across ten provinces, how many per province?",divide,1400000000,10
+zh,"万 and 亿 magnitudes","Prize pool one hundred million RMB, average give 2000 people, each people get how much?",divide,100000000,2000
+zh,"colloquial money","three bucks fifty plus two bucks fifty",add,3.5,2.5
+zh,"colloquial money","Groceries were 12.80 and the fruit was 25.50, what's the damage?",add,12.8,25.5
+zh,"colloquial money","Breakfast baozi 3.5 yuan, soy milk 2 yuan, altogether how much money?",add,3.5,2
+zh,"colloquial money","Two red packets came in on WeChat, one 5.20 and one 8.80, what's that all together?",add,5.2,8.8
+zh,"colloquial money","Milk tea is 13.5 kuai, add pearls 2 kuai, so total how much?",add,13.5,2
+zh,"colloquial money","Handed over 50 bucks for something that cost 32.50, how much change do I get back?",subtract,50,32.5
+zh,"colloquial money","200 in the red envelope, 88.80 already given out, what's left?",subtract,200,88.8
+zh,"colloquial money","Apples cost me 8.50 out of a hundred bucks, how much do I have left?",subtract,100,8.5
+zh,"colloquial money","10 bucks minus 75 cents, what's left",subtract,10,0.75
+zh,"colloquial money","Taxi fare was 25 and the coupon knocks off 3.50, what do I really pay?",subtract,25,3.5
+zh,"colloquial money","Original price 200 kuai, give 20 percent discount, how much is the price now?",multiply,200,0.8
+zh,"colloquial money","The jacket was 399 and it's 25% off, what's the sale price?",multiply,399,0.75
+zh,"colloquial money","Sneakers I grabbed on Singles' Day, 600 yuan marked half off, what's my bill?",multiply,600,0.5
+zh,"colloquial money","Rate is 7.2 today, so 300 US dollars is how many yuan?",multiply,300,7.2
+zh,"colloquial money","Twelve red packets at 6.60 apiece, how much am I out in total?",multiply,6.6,12
+zh,"colloquial money","Lollipops go for half a buck apiece, how much for thirty?",multiply,0.5,30
+zh,"colloquial money","Reunion dinner came to 168 and the six of us are going Dutch, what's each person's share?",divide,168,6
+zh,"colloquial money","One mooncake gift box 98.8 yuan, 4 families share equally, each family pay how much?",divide,98.8,4
+zh,"colloquial money","50 yuan can buy how many 2.5 yuan buns?",divide,50,2.5
+zh,"colloquial money","88.8 in the red packet, 8 people sharing it equally, how much each?",divide,88.8,8
+zh,"half, double and fractions","Cut 36 in half",divide,36,2
+zh,"half, double and fractions","The 260 yuan set menu is half price today, what do I pay?",divide,260,2
+zh,"half, double and fractions","Give me 88 doubled",multiply,88,2
+zh,"half, double and fractions","Orders double, before is 450, now how many?",multiply,450,2
+zh,"half, double and fractions","240, one third of it is how much?",divide,240,3
+zh,"half, double and fractions","What's a quarter of 600?",divide,600,4
+zh,"half, double and fractions","a fifth of fifteen hundred",divide,1500,5
+zh,"half, double and fractions","Shrink 960 down to a third of what it is",divide,960,3
+zh,"half, double and fractions","Blow 75 up to 4 times its size",multiply,75,4
+zh,"half, double and fractions","12's 3 times is how much?",multiply,12,3
+zh,"half, double and fractions","What's four times as much as 45?",multiply,45,4
+zh,"half, double and fractions","an hour and a half times four",multiply,1.5,4
+zh,"half, double and fractions","Walking two and a half hours a day for 6 days, how many hours in all?",multiply,2.5,6
+zh,"half, double and fractions","3 and half jin add 2 and half jin equal how many jin?",add,3.5,2.5
+zh,"half, double and fractions","Picked up two and a half pounds of ribs and a pound and a half of wings, how many pounds total?",add,2.5,1.5
+zh,"half, double and fractions","Five and a half months at twenty-three hundred a month, what's the total?",multiply,5.5,2300
+zh,"half, double and fractions","A pound and a half of fish split three ways, how much does each person get?",divide,1.5,3
+zh,"half, double and fractions","4 and a half hours of class with an hour and a half break, how long was the actual class time?",subtract,4.5,1.5
+zh,"half, double and fractions","Red packet doubled, original was 200 yuan, now how much is it?",multiply,200,2
+zh,"half, double and fractions","Teaching a three and a half hour class at 120 an hour, what do I make?",multiply,3.5,120
+zh,"comparison idioms","Xiaoming is 172 centimeters and Xiaohua is 165, Xiaoming taller by how many?",subtract,172,165
+zh,"comparison idioms","Beijing is 60,000 a square meter and Chengdu is 15,000, how much pricier is Beijing?",subtract,60000,15000
+zh,"comparison idioms","This month sell 320, last month 280, this month more sell how many?",subtract,320,280
+zh,"comparison idioms","Profit was 1.5 million this year against 1.8 million last year, how far down are we?",subtract,1800000,1500000
+zh,"comparison idioms","How much less is 35 than 50?",subtract,50,35
+zh,"comparison idioms","Dad 75 kilos, mom 58 kilos, the weight difference is how many?",subtract,75,58
+zh,"comparison idioms","120 is how many times 30?",divide,120,30
+zh,"comparison idioms","This year output 9 million jin, last year 3 million jin, this year is how many times of last year?",divide,9000000,3000000
+zh,"comparison idioms","150 is how many twenty-fives?",divide,150,25
+zh,"comparison idioms","What's 12 more than 80?",add,80,12
+zh,"comparison idioms","What number is 45 shy of 200?",subtract,200,45
+zh,"comparison idioms","3000 more than ten thousand",add,10000,3000
+zh,"comparison idioms","Big brother saved 50 thousand and little brother saved 32 thousand, how much more did big brother put away?",subtract,50000,32000
+zh,"comparison idioms","My cousin got 92 and I got 85, how many points behind am I?",subtract,92,85
+zh,"comparison idioms","Apples are 8 bucks a pound, oranges are 5 and a half, how much pricier are the apples?",subtract,8,5.5
+zh,"comparison idioms","This road is 45 kilometers, that road 18, this one is how many times that one?",divide,45,18
+zh,"comparison idioms","He makes 600k a year and I make 150k, so he makes how many times what I make?",divide,600000,150000
+zh,"comparison idioms","I'm 35, my son's 7, what's the age gap?",subtract,35,7
+zh,"comparison idioms","Eggs are 4.50 a pound at the supermarket and 3.80 at the wet market, how much extra am I paying at the supermarket?",subtract,4.5,3.8
+zh,"comparison idioms","How much more is 100 million than 30 million?",subtract,100000000,30000000
+zh,"formal operation nouns","12 and 4, the product is how much?",multiply,12,4
+zh,"formal operation nouns","What's the quotient of 36 and 9?",divide,36,9
+zh,"formal operation nouns","The sum of 85 and 27",add,85,27
+zh,"formal operation nouns","What's the difference between 100 and 58?",subtract,100,58
+zh,"formal operation nouns","Homework question: dividend 84, divisor 7, find the quotient",divide,84,7
+zh,"formal operation nouns","Minuend is 90, subtrahend is 35, what's the difference?",subtract,90,35
+zh,"formal operation nouns","The multiplicand is 25, multiplier is 8, product is how much?",multiply,25,8
+zh,"formal operation nouns","The addends are 47 and 38, find the sum",add,47,38
+zh,"formal operation nouns","Work out the sum of fifteen and 27",add,15,27
+zh,"formal operation nouns","Need the quotient of 48 and 6",divide,48,6
+zh,"formal operation nouns","Get me the product of 13 and 9",multiply,13,9
+zh,"formal operation nouns","Difference of 200 and 75?",subtract,200,75
+zh,"formal operation nouns","Compute the product of 125 and 8",multiply,125,8
+zh,"formal operation nouns","What do you get when you divide 96 by 4?",divide,96,4
+zh,"formal operation nouns","Give me the sum of two point five and 1.5",add,2.5,1.5
+zh,"formal operation nouns","0.8 and 0.5, what's the difference?",subtract,0.8,0.5
+zh,"formal operation nouns","What's the sum of 30 thousand and 25 thousand?",add,30000,25000
+zh,"formal operation nouns","What's the product of 2.4 and five?",multiply,2.4,5
+zh,"formal operation nouns","The quotient of 1000 and 250 is how much?",divide,1000,250
+zh,"formal operation nouns","Give me the quotient of 4.5 and 0.9",divide,4.5,0.9
+zh,"symbols and no punctuation","3 + 4 =",add,3,4
+zh,"symbols and no punctuation","12 - 5 = ?",subtract,12,5
+zh,"symbols and no punctuation","6 x 7",multiply,6,7
+zh,"symbols and no punctuation","20 ÷ 4",divide,20,4
+zh,"symbols and no punctuation","8x9 equals what",multiply,8,9
+zh,"symbols and no punctuation",15+27=?,add,15,27
+zh,"symbols and no punctuation","100 – 36 =",subtract,100,36
+zh,"symbols and no punctuation","9 × 12",multiply,9,12
+zh,"symbols and no punctuation",144/12,divide,144,12
+zh,"symbols and no punctuation","23 plus 19 equals how much",add,23,19
+zh,"symbols and no punctuation","50 multiply 6",multiply,50,6
+zh,"symbols and no punctuation","81 divided by 9 equals what",divide,81,9
+zh,"symbols and no punctuation",7.5+2.5,add,7.5,2.5
+zh,"symbols and no punctuation",0.5*0.6,multiply,0.5,0.6
+zh,"symbols and no punctuation","3.6 / 0.6",divide,3.6,0.6
+zh,"symbols and no punctuation","25 + 75 equals",add,25,75
+zh,"symbols and no punctuation","90 − 45",subtract,90,45
+zh,"symbols and no punctuation","360 divide by 6",divide,360,6
+zh,"symbols and no punctuation","45 times 22",multiply,45,22
+zh,"symbols and no punctuation","4.2 minus 1.7",subtract,4.2,1.7
+zh,"numeral leakage","three plus four",add,3,4
+zh,"numeral leakage","five multiplied by seven",multiply,5,7
+zh,"numeral leakage","nine minus two, equals what",subtract,9,2
+zh,"numeral leakage","Double thirty-six",multiply,36,2
+zh,"numeral leakage","200 plus three hundred",add,200,300
+zh,"numeral leakage","take five hundred off two thousand",subtract,2000,500
+zh,"numeral leakage","123 plus forty-five",add,123,45
+zh,"numeral leakage","three hundred fifty minus a hundred and twenty",subtract,350,120
+zh,"numeral leakage","fifteen times 20",multiply,15,20
+zh,"numeral leakage","eighty divide by four",divide,80,4
+zh,"numeral leakage","3.5 add two point five",add,3.5,2.5
+zh,"numeral leakage","10.2 minus three point eight",subtract,10.2,3.8
+zh,"numeral leakage","600 bucks split between two people, how much each?",divide,600,2
+zh,"numeral leakage","I bought thirty apples at 5 bucks each, what do I owe?",multiply,30,5
+zh,"numeral leakage","3 thousand add 5 hundred",add,3000,500
+zh,"numeral leakage","forty-eight hundred minus twelve hundred",subtract,4800,1200
+zh,"numeral leakage","12 squared, what is it",multiply,12,12
+zh,"numeral leakage","twenty five thousand plus 15,000",add,25000,15000
+zh,"numeral leakage","a hundred and fifty divided by six",divide,150,6
+zh,"numeral leakage","two hundred fifty multiply four",multiply,250,4
+zh,"ASR homophone errors","10 mine us 3",subtract,10,3
+zh,"ASR homophone errors","25 minus ate equals what",subtract,25,8
+zh,"ASR homophone errors","60 minis 15",subtract,60,15
+zh,"ASR homophone errors","6 thymes 7",multiply,6,7
+zh,"ASR homophone errors","12 time's 8 equals what",multiply,12,8
+zh,"ASR homophone errors","40 multiplied buy 5",multiply,40,5
+zh,"ASR homophone errors","35 divided bye 7",divide,35,7
+zh,"ASR homophone errors","72 divided be 8",divide,72,8
+zh,"ASR homophone errors","100 divide it by 4",divide,100,4
+zh,"ASR homophone errors","18 place 27",add,18,27
+zh,"ASR homophone errors","45 ad 12 equals what",add,45,12
+zh,"ASR homophone errors","what is 8 scared",multiply,8,8
+zh,"ASR homophone errors","15 square",multiply,15,15
+zh,"ASR homophone errors","24 tree times",multiply,24,3
+zh,"ASR homophone errors","what is for times 60",multiply,60,4
+zh,"ASR homophone errors","one thirds of 90",divide,90,3
+zh,"ASR homophone errors","5.5 time 2",multiply,5.5,2
+zh,"ASR homophone errors","70,000 miners 20,000",subtract,70000,20000
+zh,"ASR homophone errors","300 devised by 12",divide,300,12
+zh,"ASR homophone errors","56 plus 40 for",add,56,44

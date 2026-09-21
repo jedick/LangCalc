@@ -49,3 +49,53 @@ en,"magnitude variation",300减去3000,subtract,300,3000
 en,"magnitude variation",700减去7000,subtract,700,7000
 en,"magnitude variation",5000减去50000,subtract,5000,50000
 en,"magnitude variation",10000乘以100000,multiply,10000,100000
+zh,"万 and 亿 magnitudes",仓库里有4万件货，又进了2万5，现在一共多少件？,add,40000,25000
+zh,"万 and 亿 magnitudes",2亿5000万减去8000万,subtract,250000000,80000000
+zh,"万 and 亿 magnitudes",3万户人家，每户交了800块物业费，一共收了多少钱？,multiply,30000,800
+zh,"万 and 亿 magnitudes",这部电影票房9.6亿，4家发行公司平分，每家分多少？,divide,960000000,4
+zh,"万 and 亿 magnitudes",工厂月产量7.5万件，3个月一共生产多少件？,multiply,75000,3
+zh,"万 and 亿 magnitudes",3万2千加8千等于多少,add,32000,8000
+zh,"万 and 亿 magnitudes",城市常住人口2300万，其中外来人口600万，本地人口有多少？,subtract,23000000,6000000
+zh,"万 and 亿 magnitudes",50万的装修预算，分成5期付款，每期多少？,divide,500000,5
+zh,"colloquial money",咖啡18块5，蛋糕22块，一共多少钱？,add,18.5,22
+zh,"colloquial money",红包里有66块6，再加上18块8，总共多少？,add,66.6,18.8
+zh,"colloquial money",衬衫标价250块，打9折后多少钱？,multiply,250,0.9
+zh,"colloquial money",手机原价3999，打8.5折是多少？,multiply,3999,0.85
+zh,"colloquial money",付了100块，商品72块3，应该找回多少？,subtract,100,72.3
+zh,"colloquial money",10块钱买了3块2毛的东西，还剩多少？,subtract,10,3.2
+zh,"colloquial money",1000块的团建费AA给8个人，每人多少钱？,divide,1000,8
+zh,"colloquial money",35块5的外卖平分给5个人，每人付多少？,divide,35.5,5
+zh,"half, double and fractions",84的一半是多少,divide,84,2
+zh,"half, double and fractions",半价买这双650块的球鞋，要付多少钱？,divide,650,2
+zh,"half, double and fractions",销量翻倍，去年是3500件，今年多少？,multiply,3500,2
+zh,"half, double and fractions",630的3分之1是多少,divide,630,3
+zh,"half, double and fractions",18的5倍是多少,multiply,18,5
+zh,"half, double and fractions",6个半小时的车程，已经开了2个半小时，还剩多少小时？,subtract,6.5,2.5
+zh,"half, double and fractions",3个半月的水电费，每月180，一共多少？,multiply,3.5,180
+zh,"half, double and fractions",5斤半的苹果加上4斤半的梨，一共多少斤？,add,5.5,4.5
+zh,"comparison idioms",弟弟身高158，哥哥身高176，哥哥比弟弟高多少？,subtract,176,158
+zh,"comparison idioms",上海的房价每平米7万，武汉的每平米1万8，上海比武汉贵多少？,subtract,70000,18000
+zh,"comparison idioms",12比40少多少,subtract,40,12
+zh,"comparison idioms",180是45的几倍,divide,180,45
+zh,"comparison idioms",今年销售额2亿，去年5000万，今年是去年的几倍？,divide,200000000,50000000
+zh,"comparison idioms",比350多80的数是多少,add,350,80
+zh,"comparison idioms",小李月薪1万2，小王月薪8000，月薪相差多少？,subtract,12000,8000
+zh,"comparison idioms",这栋楼高240米，那栋楼高60米，这栋楼是那栋楼的几倍？,divide,240,60
+zh,"formal operation nouns",求56与7的商,divide,56,7
+zh,"formal operation nouns",被减数是150，减数是72，差是多少？,subtract,150,72
+zh,"formal operation nouns",42与15的和是多少,add,42,15
+zh,"formal operation nouns",被乘数是36，乘数是15，积是多少？,multiply,36,15
+zh,"symbols and no punctuation",48+37,add,48,37
+zh,"symbols and no punctuation","205 - 99 = ?",subtract,205,99
+zh,"symbols and no punctuation",13×15等于几,multiply,13,15
+zh,"symbols and no punctuation","500 ÷ 25",divide,500,25
+zh,"symbols and no punctuation","6.5 * 4",multiply,6.5,4
+zh,"numeral leakage",七十二加二十八,add,72,28
+zh,"numeral leakage",六千减八百,subtract,6000,800
+zh,"numeral leakage",两百四十除以八,divide,240,8
+zh,"numeral leakage",五点五乘以四,multiply,5.5,4
+zh,"numeral leakage",一万二加三千,add,12000,3000
+zh,"ASR homophone errors",80剪25,subtract,80,25
+zh,"ASR homophone errors",96出以8,divide,96,8
+zh,"ASR homophone errors",20的3陪是多少,multiply,20,3
+zh,"ASR homophone errors",27家35,add,27,35

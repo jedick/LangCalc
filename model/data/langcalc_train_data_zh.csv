@@ -159,3 +159,163 @@ en,"magnitude variation",400除以4,divide,400,4
 en,"magnitude variation",用700除以7,divide,700,7
 en,"magnitude variation",6000除以60,divide,6000,60
 en,"magnitude variation",用50除以5000,divide,50,5000
+zh,"万 and 亿 magnitudes",去年赚了3万，今年赚了5万，加起来一共多少？,add,30000,50000
+zh,"万 and 亿 magnitudes",3万5加1万2等于多少,add,35000,12000
+zh,"万 and 亿 magnitudes",视频昨天播放量2.5万，今天播放量3.8万，累计播放多少？,add,25000,38000
+zh,"万 and 亿 magnitudes",北京的房子500万，旁边的车位30万，一起买要多少钱？,add,5000000,300000
+zh,"万 and 亿 magnitudes",1亿加5000万是多少,add,100000000,50000000
+zh,"万 and 亿 magnitudes",5000万减2000万,subtract,50000000,20000000
+zh,"万 and 亿 magnitudes",1亿减3000万等于多少,subtract,100000000,30000000
+zh,"万 and 亿 magnitudes",存款有8万，买车花了5万5，还剩多少？,subtract,80000,55000
+zh,"万 and 亿 magnitudes",村里人口1.2万，外出打工的有4000人，留在村里的还有多少人？,subtract,12000,4000
+zh,"万 and 亿 magnitudes",公司注册资本300万，已经到账120万，还差多少？,subtract,3000000,1200000
+zh,"万 and 亿 magnitudes",2.5万乘4,multiply,25000,4
+zh,"万 and 亿 magnitudes",月薪1万5，一年12个月，年薪是多少？,multiply,15000,12
+zh,"万 and 亿 magnitudes",每人捐了3万，一共8个人，总共捐了多少？,multiply,30000,8
+zh,"万 and 亿 magnitudes",1.5亿乘以3,multiply,150000000,3
+zh,"万 and 亿 magnitudes",春运期间每天发送旅客2000万人次，一共40天，总共多少人次？,multiply,20000000,40
+zh,"万 and 亿 magnitudes",1.2亿除以4,divide,120000000,4
+zh,"万 and 亿 magnitudes",10万除以5万,divide,100000,50000
+zh,"万 and 亿 magnitudes",600万的项目，3个合伙人平分，每人分多少？,divide,6000000,3
+zh,"万 and 亿 magnitudes",14亿人口平均分给10个省，每个省多少人？,divide,1400000000,10
+zh,"万 and 亿 magnitudes",1亿元的奖金池，平均发给2000人，每人多少？,divide,100000000,2000
+zh,"colloquial money",3块5加2块5,add,3.5,2.5
+zh,"colloquial money",买菜花了12块8，买水果花了25块5，一共多少钱？,add,12.8,25.5
+zh,"colloquial money",早餐包子3块5，豆浆2块，一共多少钱,add,3.5,2
+zh,"colloquial money",微信收到红包，一个5块2毛，一个8块8，总共多少？,add,5.2,8.8
+zh,"colloquial money",奶茶13块5，加一份珍珠2块，一共多少钱,add,13.5,2
+zh,"colloquial money",给了50块，买了32块5的东西，应该找回多少？,subtract,50,32.5
+zh,"colloquial money",红包有200块，发出去了88块8，还剩多少？,subtract,200,88.8
+zh,"colloquial money",买苹果花了8块5，100块钱还剩多少？,subtract,100,8.5
+zh,"colloquial money",10块减去7毛5等于多少,subtract,10,0.75
+zh,"colloquial money",打车原来要25块，今天有优惠券减了3块5，实付多少？,subtract,25,3.5
+zh,"colloquial money",原价200块打8折是多少,multiply,200,0.8
+zh,"colloquial money",衣服原价399，打7.5折，折后多少钱？,multiply,399,0.75
+zh,"colloquial money",双11抢到的鞋子，原价600元打5折，要付多少钱？,multiply,600,0.5
+zh,"colloquial money",汇率7.2，换300美元要多少人民币？,multiply,300,7.2
+zh,"colloquial money",每个红包6块6，发给12个人，一共多少钱？,multiply,6.6,12
+zh,"colloquial money",5毛钱一根的棒棒糖，买30根要多少钱？,multiply,0.5,30
+zh,"colloquial money",168块的年夜饭AA，6个人每人多少钱？,divide,168,6
+zh,"colloquial money",98块8的月饼礼盒，平分给4家人，每家多少钱？,divide,98.8,4
+zh,"colloquial money",50块钱能买几个2块5的包子？,divide,50,2.5
+zh,"colloquial money",88块8的红包平均发给8个人，每人多少？,divide,88.8,8
+zh,"half, double and fractions",36的一半是多少,divide,36,2
+zh,"half, double and fractions",半价买这份260元的套餐，要付多少钱？,divide,260,2
+zh,"half, double and fractions",把88翻倍,multiply,88,2
+zh,"half, double and fractions",订单量翻倍，原来是450单，现在多少？,multiply,450,2
+zh,"half, double and fractions",240的3分之1是多少,divide,240,3
+zh,"half, double and fractions",600的4分之1,divide,600,4
+zh,"half, double and fractions",1500的5分之1是多少,divide,1500,5
+zh,"half, double and fractions",把960缩小到原来的3分之1,divide,960,3
+zh,"half, double and fractions",把75放大到原来的4倍,multiply,75,4
+zh,"half, double and fractions",12的3倍是多少,multiply,12,3
+zh,"half, double and fractions",45的4倍等于多少,multiply,45,4
+zh,"half, double and fractions",1个半小时乘以4，一共多少小时？,multiply,1.5,4
+zh,"half, double and fractions",每天走2个半小时，走6天一共多少小时？,multiply,2.5,6
+zh,"half, double and fractions",3斤半加2斤半等于几斤,add,3.5,2.5
+zh,"half, double and fractions",买了2斤半的排骨，又买了1斤半的鸡翅，一共多少斤？,add,2.5,1.5
+zh,"half, double and fractions",5个半月的房租，每月2300，一共多少？,multiply,5.5,2300
+zh,"half, double and fractions",1斤半的鱼平分给3个人，每人多少斤？,divide,1.5,3
+zh,"half, double and fractions",上了4个半小时的课，休息了1个半小时，实际上课多少小时？,subtract,4.5,1.5
+zh,"half, double and fractions",红包翻倍，原来是200块，现在多少？,multiply,200,2
+zh,"half, double and fractions",3个半小时的课，每小时收费120，一共多少钱？,multiply,3.5,120
+zh,"comparison idioms",小明身高172，小华身高165，小明比小华高多少？,subtract,172,165
+zh,"comparison idioms",北京的房价每平米6万，成都的每平米1万5，北京比成都贵多少？,subtract,60000,15000
+zh,"comparison idioms",这个月卖了320件，上个月卖了280件，这个月比上个月多卖多少件？,subtract,320,280
+zh,"comparison idioms",今年利润150万，去年利润180万，今年比去年少多少？,subtract,1800000,1500000
+zh,"comparison idioms",35比50少多少,subtract,50,35
+zh,"comparison idioms",爸爸75公斤，妈妈58公斤，体重相差多少？,subtract,75,58
+zh,"comparison idioms",120是30的几倍,divide,120,30
+zh,"comparison idioms",今年产量900万斤，去年300万斤，今年是去年的几倍？,divide,9000000,3000000
+zh,"comparison idioms",150是25的几倍,divide,150,25
+zh,"comparison idioms",比80多12的数是多少,add,80,12
+zh,"comparison idioms",比200少45的数是多少,subtract,200,45
+zh,"comparison idioms",比1万多3千的数是多少,add,10000,3000
+zh,"comparison idioms",哥哥存了5万，弟弟存了3万2，哥哥比弟弟多存多少？,subtract,50000,32000
+zh,"comparison idioms",表弟考了92分，我考了85分，我比他少多少分？,subtract,92,85
+zh,"comparison idioms",苹果每斤8块，橘子每斤5块5，苹果比橘子贵多少？,subtract,8,5.5
+zh,"comparison idioms",这条路长45公里，那条路长18公里，这条路是那条路的几倍？,divide,45,18
+zh,"comparison idioms",他年薪60万，我年薪15万，他的年薪是我的几倍？,divide,600000,150000
+zh,"comparison idioms",我今年35岁，儿子7岁，我比儿子大多少岁？,subtract,35,7
+zh,"comparison idioms",超市的鸡蛋4块5一斤，菜市场的3块8一斤，超市比菜市场贵多少？,subtract,4.5,3.8
+zh,"comparison idioms",1亿比3000万多多少,subtract,100000000,30000000
+zh,"formal operation nouns",12与4的积是多少,multiply,12,4
+zh,"formal operation nouns",36和9的商是多少,divide,36,9
+zh,"formal operation nouns",85与27的和,add,85,27
+zh,"formal operation nouns",100与58的差是多少,subtract,100,58
+zh,"formal operation nouns",被除数是84，除数是7，商是多少？,divide,84,7
+zh,"formal operation nouns",被减数是90，减数是35，差是多少？,subtract,90,35
+zh,"formal operation nouns",被乘数是25，乘数是8，积是多少？,multiply,25,8
+zh,"formal operation nouns",加数是47和38，求和,add,47,38
+zh,"formal operation nouns",求15与27的和,add,15,27
+zh,"formal operation nouns",求48与6之商,divide,48,6
+zh,"formal operation nouns",求13与9的积,multiply,13,9
+zh,"formal operation nouns",求200与75之差,subtract,200,75
+zh,"formal operation nouns",计算125与8的乘积,multiply,125,8
+zh,"formal operation nouns",96除以4所得的商是多少,divide,96,4
+zh,"formal operation nouns",求2.5与1.5之和,add,2.5,1.5
+zh,"formal operation nouns",0.8与0.5的差是多少,subtract,0.8,0.5
+zh,"formal operation nouns",求3万与2万5之和,add,30000,25000
+zh,"formal operation nouns",求2.4与5的乘积,multiply,2.4,5
+zh,"formal operation nouns",1000与250的商是多少,divide,1000,250
+zh,"formal operation nouns",求4.5与0.9的商,divide,4.5,0.9
+zh,"symbols and no punctuation",3+4,add,3,4
+zh,"symbols and no punctuation",12-5,subtract,12,5
+zh,"symbols and no punctuation",6×7,multiply,6,7
+zh,"symbols and no punctuation",20÷4,divide,20,4
+zh,"symbols and no punctuation",8x9等于几,multiply,8,9
+zh,"symbols and no punctuation","15 + 27 = ?",add,15,27
+zh,"symbols and no punctuation","100 - 36 =",subtract,100,36
+zh,"symbols and no punctuation","9 * 12",multiply,9,12
+zh,"symbols and no punctuation","144 / 12",divide,144,12
+zh,"symbols and no punctuation","23 加 19 等于多少",add,23,19
+zh,"symbols and no punctuation","50 乘 6",multiply,50,6
+zh,"symbols and no punctuation","81 除以 9 等于几",divide,81,9
+zh,"symbols and no punctuation",7.5+2.5,add,7.5,2.5
+zh,"symbols and no punctuation",0.5×0.6,multiply,0.5,0.6
+zh,"symbols and no punctuation",3.6÷0.6,divide,3.6,0.6
+zh,"symbols and no punctuation",25＋75,add,25,75
+zh,"symbols and no punctuation",90－45,subtract,90,45
+zh,"symbols and no punctuation",360除以6,divide,360,6
+zh,"symbols and no punctuation",45乘22,multiply,45,22
+zh,"symbols and no punctuation",4.2减1.7,subtract,4.2,1.7
+zh,"numeral leakage",三加四,add,3,4
+zh,"numeral leakage",五乘七,multiply,5,7
+zh,"numeral leakage",九减二等于多少,subtract,9,2
+zh,"numeral leakage",三十六的两倍是多少,multiply,36,2
+zh,"numeral leakage",两百加三百,add,200,300
+zh,"numeral leakage",两千减五百,subtract,2000,500
+zh,"numeral leakage",一百二十三加四十五,add,123,45
+zh,"numeral leakage",三百五十减去一百二十,subtract,350,120
+zh,"numeral leakage",十五乘以二十,multiply,15,20
+zh,"numeral leakage",八十除以四,divide,80,4
+zh,"numeral leakage",三点五加二点五,add,3.5,2.5
+zh,"numeral leakage",十点二减三点八,subtract,10.2,3.8
+zh,"numeral leakage",六百块钱平分给两个人，每人多少？,divide,600,2
+zh,"numeral leakage",买了三十个苹果，每个五块钱，一共多少钱？,multiply,30,5
+zh,"numeral leakage",3千加5百等于多少,add,3000,500
+zh,"numeral leakage",四千八百减一千二百,subtract,4800,1200
+zh,"numeral leakage",十二的平方是多少,multiply,12,12
+zh,"numeral leakage",两万五加一万五,add,25000,15000
+zh,"numeral leakage",一百五十除以六,divide,150,6
+zh,"numeral leakage",两百五十乘四,multiply,250,4
+zh,"ASR homophone errors",10剪3,subtract,10,3
+zh,"ASR homophone errors",25剪去8等于多少,subtract,25,8
+zh,"ASR homophone errors",60检去15,subtract,60,15
+zh,"ASR homophone errors",6成以7,multiply,6,7
+zh,"ASR homophone errors",12成8等于多少,multiply,12,8
+zh,"ASR homophone errors",40承以5,multiply,40,5
+zh,"ASR homophone errors",35初以7,divide,35,7
+zh,"ASR homophone errors",72除一8,divide,72,8
+zh,"ASR homophone errors",100储以4,divide,100,4
+zh,"ASR homophone errors",18家27,add,18,27
+zh,"ASR homophone errors",45佳12等于多少,add,45,12
+zh,"ASR homophone errors",8的平房是多少,multiply,8,8
+zh,"ASR homophone errors",15的平房,multiply,15,15
+zh,"ASR homophone errors",24的3被,multiply,24,3
+zh,"ASR homophone errors",60的4背是多少,multiply,60,4
+zh,"ASR homophone errors",90的3份之1,divide,90,3
+zh,"ASR homophone errors",5.5成2,multiply,5.5,2
+zh,"ASR homophone errors",7万剪2万,subtract,70000,20000
+zh,"ASR homophone errors",300初以12,divide,300,12
+zh,"ASR homophone errors",56家44,add,56,44

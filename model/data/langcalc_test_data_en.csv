@@ -49,3 +49,53 @@ en,"magnitude variation","subtract 3000 from 300",subtract,300,3000
 en,"magnitude variation","subtract 7000 from 700",subtract,700,7000
 en,"magnitude variation","subtract 50000 from 5000",subtract,5000,50000
 en,"magnitude variation","multiply 10000 and 100000",multiply,10000,100000
+zh,"万 and 亿 magnitudes","Warehouse stock was 40,000 and we just took in another 25 thousand, what's it up to now?",add,40000,25000
+zh,"万 and 亿 magnitudes","Knock 80 million off 250 million",subtract,250000000,80000000
+zh,"万 and 亿 magnitudes","Thirty thousand households paid 800 each in building fees, how much was collected?",multiply,30000,800
+zh,"万 and 亿 magnitudes","This movie box office 960 million, 4 distribution companies share equally, each company gets how much?",divide,960000000,4
+zh,"万 and 亿 magnitudes","The factory turns out 75 thousand units a month, how many in three months?",multiply,75000,3
+zh,"万 and 亿 magnitudes","32 thousand add 8 thousand equals how many",add,32000,8000
+zh,"万 and 亿 magnitudes","The city has 23 million permanent residents and 6 million of them are migrants, how many locals are there?",subtract,23000000,6000000
+zh,"万 and 亿 magnitudes","Half a million for the renovation, paid in five installments, how much is each one?",divide,500000,5
+zh,"colloquial money","Coffee 18.5 yuan, cake 22 yuan, together how much?",add,18.5,22
+zh,"colloquial money","Got 66.6 in a red packet, top it up with 18.8, what's the grand total?",add,66.6,18.8
+zh,"colloquial money","Shirt marked price 250, discount 10 percent, how much after discount?",multiply,250,0.9
+zh,"colloquial money","The phone was 3999 before the 15% discount, what's it cost now?",multiply,3999,0.85
+zh,"colloquial money","Paid with a 100 for a 72.30 item, what's my change?",subtract,100,72.3
+zh,"colloquial money","I had 10 bucks and bought something for 3 dollars 20 cents, how much do I have left?",subtract,10,3.2
+zh,"colloquial money","Team building costs 1000 and we're splitting it 8 ways, what's each person's share?",divide,1000,8
+zh,"colloquial money","Takeout 35.5 yuan, 5 people share equal, each one pay how much?",divide,35.5,5
+zh,"half, double and fractions","What's 84 halved?",divide,84,2
+zh,"half, double and fractions","Half price to buy these 650 yuan sneakers, need to pay how much?",divide,650,2
+zh,"half, double and fractions","Sales doubled compared to last year's 3500 units, what's this year's number?",multiply,3500,2
+zh,"half, double and fractions","a third of 630",divide,630,3
+zh,"half, double and fractions","Scale 18 up by a factor of 5",multiply,18,5
+zh,"half, double and fractions","It's a six and a half hour drive and we've done two and a half hours already, how many hours are left?",subtract,6.5,2.5
+zh,"half, double and fractions","3 and half months utilities, every month 180, altogether how much?",multiply,3.5,180
+zh,"half, double and fractions","Apples 5 jin and a half, pears 4 jin and a half, altogether how many jin?",add,5.5,4.5
+zh,"comparison idioms","My younger brother is 158 centimeters and my older brother is 176, how much taller is the older one?",subtract,176,158
+zh,"comparison idioms","Shanghai is 70 thousand per square meter, Wuhan 18 thousand, Shanghai is more expensive by how much?",subtract,70000,18000
+zh,"comparison idioms","12 is how much smaller than 40?",subtract,40,12
+zh,"comparison idioms","180 is how many times as big as 45?",divide,180,45
+zh,"comparison idioms","Sales hit 200 million this year against 50 million last year, this year is how many times last year's?",divide,200000000,50000000
+zh,"comparison idioms","Start at 350, go up by 80, where do you land?",add,350,80
+zh,"comparison idioms","Xiao Li earns 12 thousand a month, Xiao Wang 8000, what's the monthly pay difference?",subtract,12000,8000
+zh,"comparison idioms","This tower is 240 meters and that one is 60, so this one is how many times as tall?",divide,240,60
+zh,"formal operation nouns","Give me the quotient when 56 is divided by 7",divide,56,7
+zh,"formal operation nouns","Minuend 150, subtrahend 72, find the difference",subtract,150,72
+zh,"formal operation nouns","The sum of 42 and 15 is how much?",add,42,15
+zh,"formal operation nouns","Multiplicand is 36, multiplier is 15, what's the product?",multiply,36,15
+zh,"symbols and no punctuation","48 + 37 =",add,48,37
+zh,"symbols and no punctuation",205-99=?,subtract,205,99
+zh,"symbols and no punctuation","13 × 15 equals how much",multiply,13,15
+zh,"symbols and no punctuation","500 ÷ 25 =",divide,500,25
+zh,"symbols and no punctuation",6.5*4,multiply,6.5,4
+zh,"numeral leakage","seventy-two plus 28",add,72,28
+zh,"numeral leakage","six thousand minus 800",subtract,6000,800
+zh,"numeral leakage","two hundred and forty divided by 8",divide,240,8
+zh,"numeral leakage","5.5 times four",multiply,5.5,4
+zh,"numeral leakage","twelve thousand plus 3000",add,12000,3000
+zh,"ASR homophone errors","80 minutes 25",subtract,80,25
+zh,"ASR homophone errors","96 divider by 8",divide,96,8
+zh,"ASR homophone errors","what's free times 20",multiply,20,3
+zh,"ASR homophone errors","27 plush 35",add,27,35
