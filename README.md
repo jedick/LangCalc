@@ -1,6 +1,6 @@
 # LangCalc
 
-<img src="https://raw.githubusercontent.com/jedick/LangCalc/main/assets/langcalc-icon-outline.svg" alt="LangCalc icon" width="100">
+<img src="https://raw.githubusercontent.com/jedick/LangCalc/main/assets/langcalc-icon-outline.svg" alt="LangCalc icon" width="100"/>
 
 A voice-driven calculator.
 Say "what's 2 times 20" and it does the math on-device, with no internet connection needed.
@@ -46,23 +46,26 @@ Evaluating the function call happens with plain arithmetic code, not another mod
 For the fine-tuning and evaluation notebooks, see [`model/notebooks/`](model/notebooks/).
 
 🌍 The LangCalc training and test data are multilingual, with both English (en) and Chinese (zh) prompts for the same calculator functions.
+Evaluations were performed on 100 test prompts (spoken calculator requests) for each language.
 
-The base FunctionGemma model performs poorly on English prompts (spoken calculator requests), achieving only 20% correct function calls.
-Fine-tuning with English prompts yields a large performance jump,
-while fine-tuning with *both* English and Chinese prompts gives the best results for this small model.
+The base FunctionGemma model performs poorly on English test prompts, achieving only 23% correct function calls.
+Fine-tuning with English examples yields a large performance jump,
+and adding Chinese examples into the mix doesn't degrade the model's performance on English test data.
 
-<img src="https://chnosz.net/guest/LangCalc/langcalc-test-results_v02.png" alt="LangCalc test results" width="70%">
+<img src="https://chnosz.net/guest/LangCalc/langcalc-test-results_v03.png" alt="LangCalc test results" width="70%">
 
 The strong performance of the `en.zh` model trained on two languages extends to the Chinese test data.
 
 | Model | % Correct (en) | % Correct (zh) |
 |-|-|-|
-| jedick/functiongemma-langcalc-en.zh | 81 | 89 |
-| jedick/functiongemma-langcalc-en | 63 | 85 |
-| jedick/functiongemma-langcalc-zh | 38 | 84 |
-| google/gemma-4-E2B-it | 100 | 100 |
+| jedick/functiongemma-langcalc-en.zh | 79 | 87 |
+| jedick/functiongemma-langcalc-en | 78 | 59 |
+| jedick/functiongemma-langcalc-zh | 46 | 89 |
+| google/gemma-4-E2B-it | 95 | 92 |
 
-Fine-tuning the small FunctionGemma model (270M) gets most of the way to what a much larger model (Gemma 4 E2B-it) can do at a fraction of the size, making it suitable for mobile deployment.
+Our tests show that a single fine-tuned model can power a voice calculator with different spoken languages,
+and the small fine-tuned model (FunctionGemma 270M) gets most of the way to what a much larger model (Gemma 4 E2B-it) can do.
+The size savings and multilingual capabilities make this model suitable for mobile deployment.
 
 ## Roadmap
 
