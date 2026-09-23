@@ -79,11 +79,12 @@ The size savings and multilingual capabilities make this model suitable for mobi
 ```
 LangCalc/
 ├── app/
-│   ├── gallery-task/     # plugin for Google AI Edge Gallery
+│   ├── langcalc/         # plugin for Google AI Edge Gallery
 │   └── android/          # standalone Android app [planned]
 └── model/
-    ├── notebooks/        # fine-tuning and inference notebooks (Colab)
-    └── data/             # training and test data
+    ├── data/             # training and test data
+    ├── notebooks/        # fine-tuning, inference, and evaluation notebooks
+    └── scripts/          # model format conversion scripts
 ```
 
 ## License
