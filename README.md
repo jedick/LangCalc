@@ -14,19 +14,18 @@ That split keeps answers reliable even from a very small model.
 ## Try it now
 
 There are two ways to try LangCalc.
-The fastest way to see the model in action is to run the inference notebook (this launches the notebook with Colab's hosted runtime, not on-device):
+The fastest way to see the model in action is to run the inference notebook.
+This launches the notebook with Colab's hosted runtime, not on-device:
 
 <a target="_blank" href="https://colab.research.google.com/github/jedick/LangCalc/blob/main/model/notebooks/LangCalc-inference.ipynb">
-<img src="https://www.tensorflow.org/images/colab_logo_32px.png" />Run LangCalc inference in Google Colab</a><br><br>
+<img src="https://www.tensorflow.org/images/colab_logo_32px.png" />&npsb;Run LangCalc inference in Google Colab</a><br><br>
 
 To run the model on your device, install the LangCalc custom task in [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery),
-Google's app for running on-device AI models:
-
-1. Install the AI Edge Gallery app.
-2. Add the LangCalc custom task (see [`app/gallery-task/`](app/gallery-task/) for setup steps).
-3. Open "Voice Calculator" from the home screen, pick a model, and start talking.
-
+Google's app for running on-device AI models.
 The LangCalc task integrates with the voice transcription service on your device and provides a chat-like calculator interface to show the results.
+
+<a href="app/langcalc/">
+<img src="https://raw.githubusercontent.com/jedick/LangCalc/main/assets/ai-edge-gallery-icon.png" width=32px />&nbsp;LangCalc gallery task setup instructions</a><br><br>
 
 A standalone Android app is in progress; see [Roadmap](#roadmap) below.
 
