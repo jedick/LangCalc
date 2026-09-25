@@ -18,13 +18,13 @@ The fastest way to see the model in action is to run the inference notebook.
 This launches the notebook with Colab's hosted runtime, not on-device:
 
 <a target="_blank" href="https://colab.research.google.com/github/jedick/LangCalc/blob/main/model/notebooks/LangCalc-inference.ipynb">
-<img src="https://www.tensorflow.org/images/colab_logo_32px.png" />&npsb;Run LangCalc inference in Google Colab</a><br><br>
+<img src="https://www.tensorflow.org/images/colab_logo_32px.png" />&nbsp;Run LangCalc inference in Google Colab</a><br><br>
 
 To run the model on your device, install the LangCalc custom task in [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery),
 Google's app for running on-device AI models.
 The LangCalc task integrates with the voice transcription service on your device and provides a chat-like calculator interface to show the results.
 
-<a href="app/langcalc/">
+<a href="gallery-task/">
 <img src="https://raw.githubusercontent.com/jedick/LangCalc/main/assets/ai-edge-gallery-icon.png" width=32px />&nbsp;LangCalc gallery task setup instructions</a><br><br>
 
 A standalone Android app is in progress; see [Roadmap](#roadmap) below.
@@ -68,18 +68,17 @@ The size savings and multilingual capabilities make this model suitable for mobi
 
 ## Roadmap
 
-- [x] Fine-tuned FunctionGemma model
-- [x] Working demo via Google AI Edge Gallery
-- [ ] Standalone Android app
-- [ ] Multilingual support (beyond English)
+✅ Fine-tuned FunctionGemma model\
+&emsp;&emsp;🚧 Multilingual support (currently English and Chinese; more languages planned)\
+✅ Working demo via Google AI Edge Gallery\
+⬜ Standalone Android app
 
 ## Repository layout
 
 ```
 LangCalc/
-├── app/
-│   ├── langcalc/         # plugin for Google AI Edge Gallery
-│   └── android/          # standalone Android app [planned]
+├── gallery-task/         # plugin for Google AI Edge Gallery
+├── android-app/          # standalone Android app [planned]
 └── model/
     ├── data/             # training and test data
     ├── notebooks/        # fine-tuning, inference, and evaluation notebooks
