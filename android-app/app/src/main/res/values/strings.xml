@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LangCalc</string>
+
+    <!-- Intro screen -->
+    <string name="intro_tagline">A calculator you talk to</string>
+    <string name="intro_body">LangCalc turns a spoken or typed request, in English or Chinese, into a calculation. A small language model fine-tuned for function calling (FunctionGemma) reads your request and picks the right operation. Everything runs on this device \u2014 nothing is sent to a server.</string>
+    <string name="intro_model_label">Model</string>
+    <string name="intro_model_name">FunctionGemma (fine-tuned, 270M, ~%1$s)</string>
+    <string name="intro_download_button">Download model</string>
+    <string name="intro_downloading_button">Downloading\u2026 %1$d%%</string>
+    <string name="intro_continue_button">Open LangCalc</string>
+    <string name="intro_loading_model">Loading model\u2026</string>
+    <string name="intro_retry_button">Retry</string>
+    <string name="intro_cancel_button">Cancel</string>
+    <string name="intro_download_error">Couldn\'t download the model: %1$s</string>
+    <string name="intro_load_error">Couldn\'t load the model: %1$s</string>
+    <string name="intro_wifi_hint">This is about %1$s. A Wi-Fi connection is recommended.</string>
+
+    <!-- Chat screen -->
+    <string name="chat_welcome_title">Voice Calculator</string>
+    <string name="chat_welcome_subtitle">Ask for a calculation by voice or text</string>
+    <string name="chat_supported_ops">Supported calculations</string>
+    <string name="chat_op_add">Add</string>
+    <string name="chat_op_subtract">Subtract</string>
+    <string name="chat_op_multiply">Multiply</string>
+    <string name="chat_op_divide">Divide</string>
+    <string name="chat_example_1">2 plus 20</string>
+    <string name="chat_example_2">take twenty away from two</string>
+    <string name="chat_calculator_label">Calculator</string>
+    <string name="chat_result_label">Result</string>
+    <string name="chat_expression_placeholder">Tap to enter an expression</string>
+    <string name="chat_no_function_result">\u2014</string>
+    <string name="chat_eval_error">Couldn\'t evaluate that</string>
+    <string name="chat_divide_by_zero">Can\u2019t divide by zero</string>
+    <string name="chat_inference_error">Inference failed. Try again, or reset the model from Settings.</string>
+    <string name="chat_input_placeholder">Ask for a calculation\u2026</string>
+    <string name="chat_mic_content_description">Tap to speak</string>
+    <string name="chat_send_content_description">Send</string>
+    <string name="chat_cancel_edit">Cancel</string>
+    <string name="chat_done_edit">Done</string>
+    <string name="chat_error_dialog_title">Error</string>
+    <string name="chat_error_dialog_ok">OK</string>
+    <string name="chat_no_asr_title">Speech recognition unavailable</string>
+    <string name="chat_no_asr_body">This device has no speech-recognition service installed, so voice input isn\u2019t available. You can still type your request.</string>
+    <string name="chat_mic_permission_body">LangCalc needs microphone access for voice input. You can still type your request.</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_back_content_description">Back</string>
+    <string name="settings_gear_content_description">Settings</string>
+    <string name="settings_section_language">App language</string>
+    <string name="settings_language_hint">Changes the interface only. The model understands English and Chinese either way.</string>
+    <string name="settings_lang_en">English</string>
+    <string name="settings_lang_zh">\u4E2D\u6587</string>
+    <string name="settings_section_voice">Voice input language</string>
+    <string name="settings_voice_hint">Sets the language the on-device speech recognizer listens for. \u201CAuto\u201D uses your device\u2019s default recognition language, which may not match the app language.</string>
+    <string name="settings_voice_auto">Auto (device default)</string>
+    <string name="settings_voice_en">English</string>
+    <string name="settings_voice_zh">Chinese</string>
+    <string name="settings_section_model">Model</string>
+    <string name="settings_model_status_downloaded">Downloaded \u2014 %1$s on device</string>
+    <string name="settings_model_status_not_downloaded">Not downloaded</string>
+    <string name="settings_check_updates">Check for model updates</string>
+    <string name="settings_checking_updates">Checking\u2026</string>
+    <string name="settings_up_to_date">You have the latest model.</string>
+    <string name="settings_update_available_title">Update available</string>
+    <string name="settings_update_available_body">A newer version of the model is available. Download it now? The current version will be replaced.</string>
+    <string name="settings_update_download">Download update</string>
+    <string name="settings_update_check_failed">Couldn\u2019t check for updates: %1$s</string>
+    <string name="settings_delete_model">Delete downloaded model</string>
+    <string name="settings_delete_model_disabled_hint">No model is downloaded.</string>
+    <string name="settings_delete_confirm_title">Delete the model?</string>
+    <string name="settings_delete_confirm_body">This frees about %1$s of storage. You\u2019ll need to download the model again before using LangCalc.</string>
+    <string name="settings_delete_confirm_button">Delete</string>
+    <string name="settings_cancel">Cancel</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_about_body">LangCalc %1$s \u00B7 Model: jedick/functiongemma-langcalc-en.zh</string>
+    <string name="settings_source_link">Source code on GitHub</string>
+
+    <!-- Shared -->
+    <string name="generic_ok">OK</string>
+</resources>

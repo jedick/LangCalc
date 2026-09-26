@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matches langcalc_icon_android.svg -->
+    <color name="langcalc_teal">#12896B</color>
+    <color name="ic_launcher_background">#12896B</color>
+</resources>

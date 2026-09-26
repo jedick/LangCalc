@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LangCalc</string>
+
+    <!-- Intro screen -->
+    <string name="intro_tagline">一个可以对话的计算器</string>
+    <string name="intro_body">LangCalc 可以把您说出或输入的请求(支持中文和英文)转换成一次计算。一个专门为函数调用微调过的小型语言模型(FunctionGemma)会读取您的请求并选择正确的运算。全部计算都在本机完成,不会发送到服务器。</string>
+    <string name="intro_model_label">模型</string>
+    <string name="intro_model_name">FunctionGemma(微调版,2.7 亿参数,约 %1$s)</string>
+    <string name="intro_download_button">下载模型</string>
+    <string name="intro_downloading_button">下载中\u2026 %1$d%%</string>
+    <string name="intro_continue_button">打开 LangCalc</string>
+    <string name="intro_loading_model">正在加载模型\u2026</string>
+    <string name="intro_retry_button">重试</string>
+    <string name="intro_cancel_button">取消</string>
+    <string name="intro_download_error">模型下载失败:%1$s</string>
+    <string name="intro_load_error">模型加载失败:%1$s</string>
+    <string name="intro_wifi_hint">下载大小约为 %1$s,建议使用 Wi-Fi。</string>
+
+    <!-- Chat screen -->
+    <string name="chat_welcome_title">语音计算器</string>
+    <string name="chat_welcome_subtitle">用语音或文字提出一个计算请求</string>
+    <string name="chat_supported_ops">支持的运算</string>
+    <string name="chat_op_add">加</string>
+    <string name="chat_op_subtract">减</string>
+    <string name="chat_op_multiply">乘</string>
+    <string name="chat_op_divide">除</string>
+    <string name="chat_example_1">2 加 20</string>
+    <string name="chat_example_2">2 减去 20</string>
+    <string name="chat_calculator_label">算式</string>
+    <string name="chat_result_label">结果</string>
+    <string name="chat_expression_placeholder">点击输入算式</string>
+    <string name="chat_no_function_result">\u2014</string>
+    <string name="chat_eval_error">无法计算该算式</string>
+    <string name="chat_divide_by_zero">不能除以零</string>
+    <string name="chat_inference_error">推理失败,请重试,或在设置中重置模型。</string>
+    <string name="chat_input_placeholder">提出一个计算请求\u2026</string>
+    <string name="chat_mic_content_description">点击说话</string>
+    <string name="chat_send_content_description">发送</string>
+    <string name="chat_cancel_edit">取消</string>
+    <string name="chat_done_edit">完成</string>
+    <string name="chat_error_dialog_title">出错了</string>
+    <string name="chat_error_dialog_ok">确定</string>
+    <string name="chat_no_asr_title">语音识别不可用</string>
+    <string name="chat_no_asr_body">此设备未安装语音识别服务,无法使用语音输入。您仍然可以用文字输入请求。</string>
+    <string name="chat_mic_permission_body">LangCalc 需要麦克风权限才能使用语音输入。您仍然可以用文字输入请求。</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">设置</string>
+    <string name="settings_back_content_description">返回</string>
+    <string name="settings_gear_content_description">设置</string>
+    <string name="settings_section_language">界面语言</string>
+    <string name="settings_language_hint">仅改变界面显示语言。无论选择哪种语言,模型都能理解中英文请求。</string>
+    <string name="settings_lang_en">English</string>
+    <string name="settings_lang_zh">中文</string>
+    <string name="settings_section_voice">语音输入语言</string>
+    <string name="settings_voice_hint">设置设备语音识别所使用的语言。“自动”将使用设备的默认识别语言,这可能与界面语言不同。</string>
+    <string name="settings_voice_auto">自动(设备默认)</string>
+    <string name="settings_voice_en">英文</string>
+    <string name="settings_voice_zh">中文</string>
+    <string name="settings_section_model">模型</string>
+    <string name="settings_model_status_downloaded">已下载 \u2014 占用 %1$s</string>
+    <string name="settings_model_status_not_downloaded">尚未下载</string>
+    <string name="settings_check_updates">检查模型更新</string>
+    <string name="settings_checking_updates">检查中\u2026</string>
+    <string name="settings_up_to_date">已是最新版本的模型。</string>
+    <string name="settings_update_available_title">发现新版本</string>
+    <string name="settings_update_available_body">有可用的新版本模型。现在下载吗?当前版本将被替换。</string>
+    <string name="settings_update_download">下载更新</string>
+    <string name="settings_update_check_failed">检查更新失败:%1$s</string>
+    <string name="settings_delete_model">删除已下载的模型</string>
+    <string name="settings_delete_model_disabled_hint">当前没有已下载的模型。</string>
+    <string name="settings_delete_confirm_title">删除模型?</string>
+    <string name="settings_delete_confirm_body">这将释放约 %1$s 的存储空间。再次使用 LangCalc 前需要重新下载模型。</string>
+    <string name="settings_delete_confirm_button">删除</string>
+    <string name="settings_cancel">取消</string>
+    <string name="settings_section_about">关于</string>
+    <string name="settings_about_body">LangCalc %1$s \u00B7 模型:jedick/functiongemma-langcalc-en.zh</string>
+    <string name="settings_source_link">在 GitHub 上查看源代码</string>
+
+    <!-- Shared -->
+    <string name="generic_ok">确定</string>
+</resources>

@@ -57,7 +57,7 @@ class LangCalcTask @Inject constructor(@ApplicationContext private val context: 
       docUrl =
         "https://github.com/google-ai-edge/LiteRT-LM/blob/main/docs/api/kotlin/getting_started.md",
       sourceCodeUrl =
-        "https://github.com/google-ai-edge/gallery/blob/main/Android/src/app/src/main/java/com/google/ai/edge/gallery/customtasks/langcalc",
+        "https://github.com/jedick/LangCalc/tree/main/gallery-task",
       // Empty on purpose: the allowlist supplies the models (see `modelNames`).
       models = mutableListOf(),
       // Matched by exact `name` against the model allowlist.

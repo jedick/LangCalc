@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Redrawn from the supplied langcalc_icon_android.svg. The group scale/pivot below shrinks the
+     mark into the adaptive-icon safe zone (inner ~61% of the 108dp canvas) so it isn't clipped by
+     circular or squircle launcher masks. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <group
+        android:pivotX="100"
+        android:pivotY="98"
+        android:scaleX="0.85"
+        android:scaleY="0.85">
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54,38 L146,38 A24,24 0 0 1 170,62 L170,98 A24,24 0 0 1 146,122 L100,122 L78,158 L70,122 L54,122 A24,24 0 0 1 30,98 L30,62 A24,24 0 0 1 54,38 Z" />
+        <path
+            android:fillColor="#12896B"
+            android:pathData="M77,58 L123,58 A7,7 0 0 1 130,65 A7,7 0 0 1 123,72 L77,72 A7,7 0 0 1 70,65 A7,7 0 0 1 77,58 Z" />
+        <path
+            android:fillColor="#12896B"
+            android:pathData="M77,88 L123,88 A7,7 0 0 1 130,95 A7,7 0 0 1 123,102 L77,102 A7,7 0 0 1 70,95 A7,7 0 0 1 77,88 Z" />
+    </group>
+</vector>
