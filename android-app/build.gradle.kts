@@ -1,6 +1,6 @@
 // Top-level build file. Individual module build files declare their own dependencies.
 plugins {
-    id("com.android.application") version "8.6.1" apply false
-    id("org.jetbrains.kotlin.android") version "2.0.21" apply false
-    id("org.jetbrains.kotlin.plugin.compose") version "2.0.21" apply false
+    id("com.android.application") version "8.13.2" apply false
+    id("org.jetbrains.kotlin.android") version "2.4.0" apply false
+    id("org.jetbrains.kotlin.plugin.compose") version "2.4.0" apply false
 }

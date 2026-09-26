@@ -72,33 +72,31 @@ the `android-app/` folder as a project; it manages the SDK and Gradle wrapper fo
    git clone https://github.com/jedick/LangCalc
    cd LangCalc/android-app
    ```
-3. **Connect your device.**
-   Turn on wireless debugging: Settings - Developer options - Wireless debugging.
-   Then connect with `adb` (the port numbers differ between the two commands):
-   ```
-   adb pair HOST[:PORT] [PAIRING CODE]
-   adb connect HOST[:PORT]
-   ```
-4. **Build the APK.**
+3. **Build the APK.**
    ```
    export ANDROID_HOME=~/.android
    ./gradlew assembleDebug
    ```
    This produces `app/build/outputs/apk/debug/app-debug.apk`, which you can keep, hand to someone
    else, or install on more than one device.
-5. **Install it.**
+4. **Connect your device and install the APK.**
+   Turn on wireless debugging: Settings - Developer options - Wireless debugging.
+   Then connect with `adb` (the port numbers differ between the two commands):
    ```
+   adb pair HOST[:PORT] [PAIRING CODE]
+   adb connect HOST[:PORT]
    adb install -r app/build/outputs/apk/debug/app-debug.apk
    ```
-6. **Try it.**
+   As an alternative to `adb`, copy the APK to your device and install it from the file manager.
+5. **Try it.**
    Open the LangCalc app, tap "Download model" on the intro screen, and wait for the ~285 MB
    download and load to finish. Then ask it something, by voice or by typing.
 
 ## Files
 
-- `gradlew`, `gradlew.bat`, `gradle/wrapper/`: the Gradle wrapper. Lets anyone building this project
-  use the exact Gradle version it was written against, without installing Gradle separately. Only
-  needs regenerating if you want to move to a newer Gradle version, with
+- `gradlew`, `gradlew.bat`, `gradle/wrapper/`: the Gradle wrapper, created with `gradle wrapper --gradle-version 9.3.1`.
+  Lets anyone building this project use the exact Gradle version it was written against, without installing Gradle separately.
+  Only needs regenerating if you want to move to a newer Gradle version, with
   `./gradlew wrapper --gradle-version <version>`.
 - `LangCalcApplication.kt`: holds the app-lifetime singletons (settings, model repository, the
   inference engine)
