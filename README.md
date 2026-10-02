@@ -42,9 +42,10 @@ Evaluating the function call happens with plain arithmetic code, not another mod
 
 ## Fine-tuning and evaluation
 
-For the fine-tuning and evaluation notebooks, see [`model/notebooks/`](model/notebooks/).
+Fine-tuning and evaluation notebooks are available [in this repo](model/notebooks/).
+Datasets and fine-tuned models are available on the [Hugging Face Hub](https://huggingface.co/jedick).
 
-🌍 The LangCalc training and test data are multilingual, with both English (en) and Chinese (zh) prompts for the same calculator functions.
+🌍 LangCalc training and test data are multilingual, with both English (en) and Chinese (zh) prompts for the same calculator functions.
 Evaluations were performed on 100 test prompts (spoken calculator requests) for each language.
 
 The base FunctionGemma model performs poorly on English test prompts, achieving only 23% correct function calls.
