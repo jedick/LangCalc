@@ -1,0 +1,301 @@
+origin,scenario,prompt,function,x,y,reason
+en,"general knowledge",《蒙娜丽莎》是谁画的？,decline,,,常识
+en,"general knowledge",地球上最大的海洋是哪个？,decline,,,常识
+en,"general knowledge",地球离太阳有多远？,decline,,,常识
+en,"general knowledge",谁发现了青霉素？,decline,,,常识
+en,"general knowledge",潮汐是怎么形成的？,decline,,,常识
+en,"general knowledge",人体一共有多少块骨头？,decline,,,常识
+en,"general knowledge",巴西人说什么语言？,decline,,,常识
+en,"general knowledge",第二次世界大战是什么时候结束的？,decline,,,常识
+en,"general knowledge",猎豹跑得有多快？,decline,,,常识
+en,"general knowledge",什么是光合作用？,decline,,,常识
+en,"small talk",嘿，最近怎么样？,decline,,,闲聊
+en,"small talk",你挺聪明的，你知道吗？,decline,,,闲聊
+en,"small talk",你能给我唱首歌吗？,decline,,,闲聊
+en,"small talk",我今天上班特别不顺,decline,,,闲聊
+en,"small talk",你最喜欢什么颜色？,decline,,,闲聊
+en,"small talk",早上好！,decline,,,闲聊
+en,"small talk",回头见,decline,,,闲聊
+en,"small talk",你会不会被问烦啊？,decline,,,闲聊
+en,"small talk",我觉得要下雨了,decline,,,闲聊
+en,"small talk",你平时有什么爱好？,decline,,,闲聊
+en,nonsense,zxcvbnm,decline,,,废话
+en,nonsense,噗噜噗噜嘿咻,decline,,,废话
+en,nonsense,这个这个这个这个,decline,,,废话
+en,nonsense,七把睡着的雨伞礼貌地吵架,decline,,,废话
+en,nonsense,嗯嗯啊对对,decline,,,废话
+en,nonsense,蓝色5唱歌地毯9,decline,,,废话
+en,nonsense,把桌子跳过十七个耳语,decline,,,废话
+en,nonsense,～～～,decline,,,废话
+en,nonsense,哎呀按错了,decline,,,废话
+en,nonsense,披萨代数月光勺子,decline,,,废话
+en,"missing operand",12再加上,decline,,,缺少操作数
+en,"missing operand",从里面减去3,decline,,,缺少操作数
+en,"missing operand",除以8会得到多少？,decline,,,缺少操作数
+en,"missing operand",乘15,decline,,,缺少操作数
+en,"missing operand",七十二加月亮,decline,,,缺少操作数
+en,"missing operand",5和晚饭的和是多少？,decline,,,缺少操作数
+en,"missing operand",从90里减掉一个数,decline,,,缺少操作数
+en,"missing operand",40加上几个,decline,,,缺少操作数
+en,"missing operand",我的房租加200是多少？,decline,,,缺少操作数
+en,"missing operand",60除以,decline,,,缺少操作数
+en,"missing operand",6乘以我的鞋码,decline,,,缺少操作数
+en,"missing operand",八加，等一下,decline,,,缺少操作数
+en,"missing operand",90除以星星的数量是多少？,decline,,,缺少操作数
+en,"missing operand",从我的分数里减去14,decline,,,缺少操作数
+en,"missing operand",十一减去,decline,,,缺少操作数
+en,"unsupported operation",求81的平方根,decline,,,不支持的操作
+en,"unsupported operation",2^8等于多少,decline,,,不支持的操作
+en,"unsupported operation",求7的立方,decline,,,不支持的操作
+en,"unsupported operation",8、9和10的平均值,decline,,,不支持的操作
+en,"unsupported operation",请算3、6、9、12的算术平均数,decline,,,不支持的操作
+en,"unsupported operation",5、1、9的中位数是多少？,decline,,,不支持的操作
+en,"unsupported operation",9的阶乘,decline,,,不支持的操作
+en,"unsupported operation",5!,decline,,,不支持的操作
+en,"unsupported operation",29个分成每组6个，还剩几个？,decline,,,不支持的操作
+en,"unsupported operation","100 mod 7",decline,,,不支持的操作
+en,"unsupported operation",求60度角的余弦,decline,,,不支持的操作
+en,"unsupported operation",tan45是多少,decline,,,不支持的操作
+en,"unsupported operation",1000的对数是多少？,decline,,,不支持的操作
+en,"unsupported operation",10的自然对数,decline,,,不支持的操作
+en,"unsupported operation",把38四舍五入到十位,decline,,,不支持的操作
+en,"unsupported operation",把4.2向上取整,decline,,,不支持的操作
+en,"unsupported operation",负九的绝对值是多少？,decline,,,不支持的操作
+en,"unsupported operation",求4和6的最小公倍数,decline,,,不支持的操作
+en,"unsupported operation",2、4、4、6的标准差是多少？,decline,,,不支持的操作
+en,"unsupported operation",e的平方,decline,,,不支持的操作
+en,"multi-step calculation",十五加二十五加三十五,decline,,,多步计算
+en,"multi-step calculation",6、7、8、9加一块儿是多少？,decline,,,多步计算
+en,"multi-step calculation",3乘4再乘5,decline,,,多步计算
+en,"multi-step calculation",从40里先减5再减3,decline,,,多步计算
+en,"multi-step calculation",100除以5再除以2,decline,,,多步计算
+en,"multi-step calculation",12加8，然后去掉6,decline,,,多步计算
+en,"multi-step calculation",9乘8，再加4,decline,,,多步计算
+en,"multi-step calculation",把14乘3再加20,decline,,,多步计算
+en,"multi-step calculation",30加5乘2,decline,,,多步计算
+en,"multi-step calculation","(4 + 6) * 3",decline,,,多步计算
+en,"multi-step calculation","10 - 2 * 3",decline,,,多步计算
+en,"multi-step calculation","2 + 3 + 4 + 5等于多少？",decline,,,多步计算
+en,"multi-step calculation",20加30，然后取一半,decline,,,多步计算
+en,"multi-step calculation",7、14、21加在一起,decline,,,多步计算
+en,"multi-step calculation",500减去120，再减去80是多少？,decline,,,多步计算
+en,"multi-step calculation",4加5，还有6加7,decline,,,多步计算
+en,"multi-step calculation",18加2是多少，18乘2又是多少？,decline,,,多步计算
+en,"multi-step calculation",5乘4，再把结果除以2,decline,,,多步计算
+en,"multi-step calculation",把这些全加起来：3、8、12、5,decline,,,多步计算
+en,"multi-step calculation",1000砍一半，再减50,decline,,,多步计算
+en,"missing operation",好，45和9,decline,,,缺少运算符
+en,"missing operation",八，二,decline,,,缺少运算符
+en,"missing operation",我看看，120和30,decline,,,缺少运算符
+en,"missing operation",三十五,decline,,,缺少运算符
+en,"missing operation",7和21呢？,decline,,,缺少运算符
+en,"missing operation",我这有64和16,decline,,,缺少运算符
+en,"missing operation",你平时怎么算，就怎么算11和4,decline,,,缺少运算符
+en,"missing operation",嗯，90，3,decline,,,缺少运算符
+en,"missing operation",算一算25和5,decline,,,缺少运算符
+en,"missing operation",13和13的答案是多少,decline,,,缺少运算符
+en,"missing operation",请算100和25,decline,,,缺少运算符
+en,"missing operation",两百，十,decline,,,缺少运算符
+en,"missing operation",6和6会怎么样？,decline,,,缺少运算符
+en,"missing operation",数字是17和3，你来定,decline,,,缺少运算符
+en,"missing operation",对50和8进行运算,decline,,,缺少运算符
+en,"missing operation",四点五，二,decline,,,缺少运算符
+en,"missing operation",帮我处理72和9,decline,,,缺少运算符
+en,"missing operation",数字是1000和10,decline,,,缺少运算符
+en,"missing operation",计算36和12,decline,,,缺少运算符
+en,"missing operation",九百，三,decline,,,缺少运算符
+en,"references app state",把上次的答案变成三倍,decline,,,引用应用状态
+en,"references app state",从结果里减去20,decline,,,引用应用状态
+en,"references app state",在我的累计总数上加50,decline,,,引用应用状态
+en,"references app state",我在这之前算的是什么？,decline,,,引用应用状态
+en,"references app state",回退一步,decline,,,引用应用状态
+en,"references app state",重置计算器,decline,,,引用应用状态
+en,"references app state",接着上一个数，再加5,decline,,,引用应用状态
+en,"references app state",给我看看历史记录,decline,,,引用应用状态
+en,"references app state",把答案减半,decline,,,引用应用状态
+en,"references app state",把这个加到前一个上,decline,,,引用应用状态
+en,"references app state",还是那个数，除以9,decline,,,引用应用状态
+en,"references app state",存到内存里,decline,,,引用应用状态
+en,"references app state",调出内存里的数,decline,,,引用应用状态
+en,"references app state",清空屏幕,decline,,,引用应用状态
+en,"references app state",再把它自己乘自己,decline,,,引用应用状态
+en,"needs outside data",50欧元是多少日元？,decline,,,需要外部数据
+en,"needs outside data",6英尺是多少厘米？,decline,,,需要外部数据
+en,"needs outside data",一天有多少秒？,decline,,,需要外部数据
+en,"needs outside data",3月1日往后90天是几号？,decline,,,需要外部数据
+en,"needs outside data",离圣诞节还有多少天？,decline,,,需要外部数据
+en,"needs outside data",15摄氏度是多少华氏度？,decline,,,需要外部数据
+en,"needs outside data",把8乘以圆周率,decline,,,需要外部数据
+en,"needs outside data",半径为5的圆面积是多少？,decline,,,需要外部数据
+en,"needs outside data",3磅等于多少盎司？,decline,,,需要外部数据
+en,"needs outside data",如果a加4等于10，求a,decline,,,需要外部数据
+en,"needs outside data",把z的值翻倍,decline,,,需要外部数据
+en,"needs outside data",5加仑是多少升？,decline,,,需要外部数据
+en,"needs outside data",现在金价乘以3是多少？,decline,,,需要外部数据
+en,"needs outside data",离午夜还有几个小时？,decline,,,需要外部数据
+en,"needs outside data",阿伏伽德罗常数乘以2是多少？,decline,,,需要外部数据
+zh,"general knowledge",故宫是哪个朝代修建的？,decline,,,常识
+zh,"general knowledge",李白是哪个朝代的诗人？,decline,,,常识
+zh,"general knowledge",中国有多少个省？,decline,,,常识
+zh,"general knowledge",春节是农历几月几号？,decline,,,常识
+zh,"general knowledge",黄河全长多少公里？,decline,,,常识
+zh,"general knowledge",太阳系里最大的行星是哪颗？,decline,,,常识
+zh,"general knowledge",水的沸点是多少度？,decline,,,常识
+zh,"general knowledge",《西游记》是谁写的？,decline,,,常识
+zh,"general knowledge",人一天要喝多少水才够？,decline,,,常识
+zh,"general knowledge",北京到上海的高铁要几个小时？,decline,,,常识
+zh,"small talk",吃了吗？,decline,,,闲聊
+zh,"small talk",哈哈，你真逗,decline,,,闲聊
+zh,"small talk",周末有什么好玩的推荐吗？,decline,,,闲聊
+zh,"small talk",我有点无聊,decline,,,闲聊
+zh,"small talk",你是哪里人？,decline,,,闲聊
+zh,"small talk",祝你新年快乐！,decline,,,闲聊
+zh,"small talk",最近天气变冷了，你注意保暖,decline,,,闲聊
+zh,"small talk",我们聊聊天吧,decline,,,闲聊
+zh,"small talk",你会说四川话吗？,decline,,,闲聊
+zh,"small talk",再见，明天见,decline,,,闲聊
+zh,nonsense,啦啦啦啦啦,decline,,,废话
+zh,nonsense,叽里呱啦咕噜,decline,,,废话
+zh,nonsense,的地得的地得,decline,,,废话
+zh,nonsense,苹果跑步蓝天椅子,decline,,,废话
+zh,nonsense,三台电视机在海底唱歌,decline,,,废话
+zh,nonsense,咳咳，喂喂，听得到吗,decline,,,废话
+zh,nonsense,嘟嘟嘟12咚咚,decline,,,废话
+zh,nonsense,那个那个就是那个,decline,,,废话
+zh,nonsense,月亮吃了昨天的桌子,decline,,,废话
+zh,nonsense,abcdefg哈,decline,,,废话
+zh,"unsupported language","Thủ đô của Việt Nam là gì?",decline,,,不支持的语言
+zh,"unsupported language","한국에서 가장 높은 산은 어디예요?",decline,,,不支持的语言
+zh,"unsupported language",東京タワーの高さは何メートルですか？,decline,,,不支持的语言
+zh,"unsupported language","¿Por qué el mar es azul?",decline,,,不支持的语言
+zh,"unsupported language","Qui a construit la tour Eiffel ?",decline,,,不支持的语言
+zh,"unsupported language","Wer hat die Relativitätstheorie entwickelt?",decline,,,不支持的语言
+zh,"unsupported language","Какая самая большая страна в мире?",decline,,,不支持的语言
+zh,"unsupported language","Quem descobriu o Brasil?",decline,,,不支持的语言
+zh,"unsupported language","Türkiye'nin başkenti neresidir?",decline,,,不支持的语言
+zh,"unsupported language",お疲れ様です、今日はどうでしたか？,decline,,,不支持的语言
+zh,"unsupported language","고마워요, 좋은 하루 보내세요",decline,,,不支持的语言
+zh,"unsupported language","Chào bạn, hôm nay bạn khỏe không?",decline,,,不支持的语言
+zh,"unsupported language","Hasta mañana, que descanses",decline,,,不支持的语言
+zh,"unsupported language","Salut, ça va bien ?",decline,,,不支持的语言
+zh,"unsupported language","Schönes Wochenende!",decline,,,不支持的语言
+zh,"unsupported language","Спокойной ночи",decline,,,不支持的语言
+zh,"unsupported language","Obrigado pela ajuda!",decline,,,不支持的语言
+zh,"unsupported language","Come stai oggi?",decline,,,不支持的语言
+zh,"unsupported language","파란 의자가 어제의 구름과 노래해요",decline,,,不支持的语言
+zh,"unsupported language","Con mèo uống mặt trăng trên bàn xanh",decline,,,不支持的语言
+zh,"unsupported language",ぷるぷるぽんぽこにゃん,decline,,,不支持的语言
+zh,"unsupported language","El paraguas siete corre sin zapatos",decline,,,不支持的语言
+zh,"unsupported language","Зелёный чайник считает тихие облака",decline,,,不支持的语言
+zh,"unsupported language","De blauwe koelkast fluistert tegen de dinsdag",decline,,,不支持的语言
+zh,"unsupported language",二十を割る,decline,,,不支持的语言
+zh,"unsupported language","칠에서 빼기",decline,,,不支持的语言
+zh,"unsupported language","Cộng với tám",decline,,,不支持的语言
+zh,"unsupported language","Suma doce y",decline,,,不支持的语言
+zh,"unsupported language","Ajoute dix à",decline,,,不支持的语言
+zh,"unsupported language","Умножь на три",decline,,,不支持的语言
+zh,"missing operand",乘以三十,decline,,,缺少操作数
+zh,"missing operand",八十加上,decline,,,缺少操作数
+zh,"missing operand",用一百减,decline,,,缺少操作数
+zh,"missing operand",除以多少我忘了，反正被除数是45,decline,,,缺少操作数
+zh,"missing operand",二十五加我今天的步数,decline,,,缺少操作数
+zh,"missing operand",三乘以那个数,decline,,,缺少操作数
+zh,"missing operand",把18加上,decline,,,缺少操作数
+zh,"missing operand",56减掉一些,decline,,,缺少操作数
+zh,"missing operand",12除以几来着,decline,,,缺少操作数
+zh,"missing operand",我的工资乘以12,decline,,,缺少操作数
+zh,"missing operand",一百五十除以苹果,decline,,,缺少操作数
+zh,"missing operand",7乘以？,decline,,,缺少操作数
+zh,"missing operand",从500里减掉房租,decline,,,缺少操作数
+zh,"missing operand",九加上，呃，那个,decline,,,缺少操作数
+zh,"missing operand",减去十五,decline,,,缺少操作数
+zh,"unsupported operation",49的算术平方根,decline,,,不支持的操作
+zh,"unsupported operation",3的四次方等于几？,decline,,,不支持的操作
+zh,"unsupported operation",5的三次方多少？,decline,,,不支持的操作
+zh,"unsupported operation",这三个数67、70、73求个平均,decline,,,不支持的操作
+zh,"unsupported operation",六科成绩85、90、78、92、88、95的平均分,decline,,,不支持的操作
+zh,"unsupported operation",算一下6的阶乘,decline,,,不支持的操作
+zh,"unsupported operation",8！,decline,,,不支持的操作
+zh,"unsupported operation",43被5除，余多少？,decline,,,不支持的操作
+zh,"unsupported operation",把125开三次方,decline,,,不支持的操作
+zh,"unsupported operation",sin90等于多少,decline,,,不支持的操作
+zh,"unsupported operation",以10为底100的对数,decline,,,不支持的操作
+zh,"unsupported operation",把3.14159保留两位小数,decline,,,不支持的操作
+zh,"unsupported operation",7.8向下取整,decline,,,不支持的操作
+zh,"unsupported operation",判断97是不是质数,decline,,,不支持的操作
+zh,"unsupported operation",30和45最大的公因数是多少,decline,,,不支持的操作
+zh,"unsupported operation",根号2是多少？,decline,,,不支持的操作
+zh,"unsupported operation",2的负3次方,decline,,,不支持的操作
+zh,"unsupported operation",数列2、4、8、16的下一项是多少？,decline,,,不支持的操作
+zh,"unsupported operation",ln20是多少,decline,,,不支持的操作
+zh,"unsupported operation",正切60度,decline,,,不支持的操作
+zh,"multi-step calculation",买了3斤苹果每斤5块，又买了2斤梨每斤4块，一共花了多少？,decline,,,多步计算
+zh,"multi-step calculation",先算30加20，再乘3,decline,,,多步计算
+zh,"multi-step calculation",100减30减20减10,decline,,,多步计算
+zh,"multi-step calculation",50加60加70加80,decline,,,多步计算
+zh,"multi-step calculation",5个人每人出20块，再加上我出的50，一共多少钱？,decline,,,多步计算
+zh,"multi-step calculation",一个月工资8000，扣了房租2500和水电300，剩多少？,decline,,,多步计算
+zh,"multi-step calculation",12的平方再减44,decline,,,多步计算
+zh,"multi-step calculation",先除以4，再乘以10，数字是80,decline,,,多步计算
+zh,"multi-step calculation",把2、4、6、8、10全部相加,decline,,,多步计算
+zh,"multi-step calculation",三乘五加二,decline,,,多步计算
+zh,"multi-step calculation",(10+5)*2-3,decline,,,多步计算
+zh,"multi-step calculation",我有3个红包，各是100块、200块和50块，加起来多少？,decline,,,多步计算
+zh,"multi-step calculation",1000先打八折，再减50,decline,,,多步计算
+zh,"multi-step calculation",7加8，再加9，最后减10,decline,,,多步计算
+zh,"multi-step calculation",40除以2再除以5,decline,,,多步计算
+zh,"multi-step calculation",一共4排座位，每排15个，再加上过道3个，总共多少个座位？,decline,,,多步计算
+zh,"multi-step calculation",9乘以9，然后加上9,decline,,,多步计算
+zh,"multi-step calculation",20加30等于多少，另外20减30呢,decline,,,多步计算
+zh,"multi-step calculation",90减10，加上5，乘以2,decline,,,多步计算
+zh,"multi-step calculation",每天跑5公里，跑一周再加上上周的12公里,decline,,,多步计算
+zh,"missing operation",28和4，你看着办,decline,,,缺少运算符
+zh,"missing operation",六十，五,decline,,,缺少运算符
+zh,"missing operation",只给你150和50两个数,decline,,,缺少运算符
+zh,"missing operation",帮我算算，3和9,decline,,,缺少运算符
+zh,"missing operation",88,decline,,,缺少运算符
+zh,"missing operation",42，6，快点,decline,,,缺少运算符
+zh,"missing operation",这俩数你随便弄弄，12和7,decline,,,缺少运算符
+zh,"missing operation",二十，二十,decline,,,缺少运算符
+zh,"missing operation",算一下嘛，64和8,decline,,,缺少运算符
+zh,"missing operation",一千零五,decline,,,缺少运算符
+zh,"missing operation",35，7，然后呢？,decline,,,缺少运算符
+zh,"missing operation",我这有两个数，18点5和3,decline,,,缺少运算符
+zh,"missing operation",两个数：99、11,decline,,,缺少运算符
+zh,"missing operation",22和11你打算怎么算,decline,,,缺少运算符
+zh,"missing operation",数是5000和25，开始吧,decline,,,缺少运算符
+zh,"missing operation",帮我处理一下81和9,decline,,,缺少运算符
+zh,"missing operation",45，15，嗯,decline,,,缺少运算符
+zh,"missing operation",随便来个运算，7和7,decline,,,缺少运算符
+zh,"missing operation",三点五,decline,,,缺少运算符
+zh,"missing operation",6，24，你懂的,decline,,,缺少运算符
+zh,"references app state",接着刚才的结果乘以2,decline,,,引用应用状态
+zh,"references app state",再加上刚才那个数,decline,,,引用应用状态
+zh,"references app state",刚才的答案再除以5,decline,,,引用应用状态
+zh,"references app state",清零,decline,,,引用应用状态
+zh,"references app state",上一步错了，撤回,decline,,,引用应用状态
+zh,"references app state",把结果记下来,decline,,,引用应用状态
+zh,"references app state",我刚才算的是多少来着,decline,,,引用应用状态
+zh,"references app state",用上次的结果减去100,decline,,,引用应用状态
+zh,"references app state",继续，在原来的基础上加30,decline,,,引用应用状态
+zh,"references app state",再来一遍,decline,,,引用应用状态
+zh,"references app state",把总数翻一番,decline,,,引用应用状态
+zh,"references app state",还是用刚才那个数，乘以8,decline,,,引用应用状态
+zh,"references app state",删掉最后一个数字,decline,,,引用应用状态
+zh,"references app state",把上次存的数字调出来,decline,,,引用应用状态
+zh,"references app state",现在总共是多少了？,decline,,,引用应用状态
+zh,"needs outside data",1000块人民币等于多少日元？,decline,,,需要外部数据
+zh,"needs outside data",一斤等于多少克？,decline,,,需要外部数据
+zh,"needs outside data",2024年二月有多少天？,decline,,,需要外部数据
+zh,"needs outside data",春节还有几天？,decline,,,需要外部数据
+zh,"needs outside data",100华氏度是多少摄氏度？,decline,,,需要外部数据
+zh,"needs outside data",圆周率乘以10,decline,,,需要外部数据
+zh,"needs outside data",半径3厘米的圆周长多少？,decline,,,需要外部数据
+zh,"needs outside data",三十公里是多少里,decline,,,需要外部数据
+zh,"needs outside data",x加5等于12，x是多少？,decline,,,需要外部数据
+zh,"needs outside data",今天到国庆节还有多少天？,decline,,,需要外部数据
+zh,"needs outside data",现在的美元汇率，乘以500,decline,,,需要外部数据
+zh,"needs outside data",一亩地是多少平方米？,decline,,,需要外部数据
+zh,"needs outside data",算算我多大，我是88年生的,decline,,,需要外部数据
+zh,"needs outside data",重力加速度乘以2,decline,,,需要外部数据
+zh,"needs outside data",三个小时十五分钟是多少秒？,decline,,,需要外部数据

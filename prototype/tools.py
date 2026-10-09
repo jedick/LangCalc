@@ -52,17 +52,19 @@ def divide(x: float, y: float):
     """
     return {"result": x / y}
 
-def abstain():
+def decline(reason: str = "not given"):
     """
-    Declines a request that is not a calculation (unknown, not math, cannot answer).
-    Call this when the user does not ask to add, subtract, multiply, or divide two numbers:
-    general knowledge questions, small talk, nonsense, an unsupported language, or a
-    request where a number is missing.
+    Declines a request that is not an add, subtract, multiply, or divide of two numbers
+    (abstain, cannot answer, not a calculation).
+
+    Args:
+        reason: a few words on why, in the language of the request (for example
+            "small talk" or "闲聊")
 
     Returns:
-        message: a statement that the request cannot be answered.
+        reason: the reason the request was declined.
     """
-    return {"message": "Sorry, I can only add, subtract, multiply, or divide two numbers."}
+    return reason
 
-tools = [add, subtract, multiply, divide, abstain]
+tools = [add, subtract, multiply, divide, decline]
 

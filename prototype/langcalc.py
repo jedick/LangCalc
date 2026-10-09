@@ -1,6 +1,6 @@
 # LangCalc: voice-driven calculator with FunctionGemma
 # 20260812 jmd first version
-# 20261009 add abstain() to tools; add model_family_adapters
+# 20261009 add decline() to tools; add model_family_adapters
 
 from transformers import AutoProcessor, AutoModelForCausalLM
 import torch
