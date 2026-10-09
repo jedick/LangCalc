@@ -78,8 +78,9 @@ The size savings and multilingual capabilities make this model suitable for mobi
 
 ```
 LangCalc/
+├── prototype/            # Python prototype
 ├── gallery-task/         # plugin for Google AI Edge Gallery
-├── android-app/          # standalone Android app [planned]
+├── android-app/          # standalone Android app
 └── model/
     ├── data/             # training and test data
     ├── notebooks/        # fine-tuning, inference, and evaluation notebooks
