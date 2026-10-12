@@ -29,7 +29,7 @@ columns = ["origin", "scenario", "prompt", "decision", "function", "x", "y", "re
 
 # The functions that each decision may use
 functions = {
-    "calculate": ["add", "subtract", "multiply", "divide"],
+    "calculate": ["add", "subtract", "multiply", "divide", "add_percent", "subtract_percent", "percent_of"],
     "decline": ["decline"],
 }
 

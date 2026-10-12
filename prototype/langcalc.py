@@ -1,6 +1,6 @@
 # LangCalc: voice-driven calculator with FunctionGemma
 # 20260812 jmd first version
-# 20261009 add decline() to tools; add model_family_adapters
+# 20261009 split out tools.py and add model_family_adapters.py
 
 from transformers import AutoProcessor, AutoModelForCausalLM
 import torch
