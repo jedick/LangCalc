@@ -65,24 +65,10 @@ def extract_tool_calls_gemma4(text):
     ]
 
 
-def prepare_inputs_functiongemma(processor, messages, tools, model):
-    inputs = processor.apply_chat_template(
-        messages, tools=tools, add_generation_prompt=True, return_dict=True, return_tensors="pt"
-    )
-    return inputs.to(model.device)
-
-
-def prepare_inputs_gemma4(processor, messages, tools, model):
-    text = processor.apply_chat_template(messages, tools=tools, tokenize=False, add_generation_prompt=True)
-    inputs = processor(text=text, return_tensors="pt")
-    return inputs.to(model.device)
-
-
 FAMILY_CONFIGS = {
     "functiongemma": {
         "system_role": "developer",
         "system_message": "You are a model that can do function calling with the following functions",
-        "prepare_inputs": prepare_inputs_functiongemma,
         "extract_tool_calls": extract_tool_calls_functiongemma,
         # FunctionGemma's function-call tags survive skip_special_tokens=True
         # (they aren't registered as special tokens), so we can decode cleanly.
@@ -92,7 +78,6 @@ FAMILY_CONFIGS = {
     "gemma4": {
         "system_role": "system",
         "system_message": "You are a model that can do function calling for a calculator app.",
-        "prepare_inputs": prepare_inputs_gemma4,
         "extract_tool_calls": extract_tool_calls_gemma4,
         # Gemma 4's tool-call tags ARE special tokens, so we need
         # skip_special_tokens=False or the tags get stripped before we can

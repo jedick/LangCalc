@@ -1,6 +1,7 @@
 # LangCalc: voice-driven calculator with FunctionGemma
 # 20260812 jmd first version
 # 20261009 split out tools.py and add model_family_adapters.py
+# 20261013 add print arguments to see messages and text
 
 from transformers import AutoProcessor, AutoModelForCausalLM
 import torch
@@ -13,62 +14,99 @@ from model_family_adapters import detect_model_family, FAMILY_CONFIGS
 
 # Uncomment one line to choose the model:
 # Gemma 4 or base or fine-tuned FunctionGemma
-GEMMA_MODEL_ID = "google/gemma-4-E2B-it"
-#GEMMA_MODEL_ID = "google/functiongemma-270m-it"
+#GEMMA_MODEL_ID = "google/gemma-4-E2B-it"
+GEMMA_MODEL_ID = "google/functiongemma-270m-it"
 #GEMMA_MODEL_ID = "jedick/functiongemma-langcalc-en.zh"
 
+# Load the processor (falls back to the tokenizer for text-only models) and model
 processor = AutoProcessor.from_pretrained(GEMMA_MODEL_ID, device_map="auto")
 model = AutoModelForCausalLM.from_pretrained(GEMMA_MODEL_ID, dtype="auto", device_map="auto")
 
-def run_inference(model, processor, family, tools, prompt, max_new_tokens=128):
+def run_inference(user_text, *, print_messages=False, print_prompt_text=False,
+                  print_generated_text=False, max_new_tokens=128):
     """
     Run inference to generate function calls
 
+    Args:
+        print_messages: print the system message and user message
+        print_text: print the full prompt as the model sees it
+        print_output_text: print the generated text
+
     Returns:
-       Function call or None for no function call generated
+        Function call or None for no function call generated
     """
-    cfg = FAMILY_CONFIGS[family]
+
+    # Get the model family and config
+    family = detect_model_family(GEMMA_MODEL_ID)
+    family_config = FAMILY_CONFIGS[family]
+
+    # The "prompt" half of a prompt-completion pair; the model generates the completion
     messages = [
-        {"role": cfg["system_role"], "content": cfg["system_message"]},
-        {"role": "user", "content": prompt},
+        {"role": family_config["system_role"], "content": family_config["system_message"]},
+        {"role": "user", "content": user_text},
     ]
-    inputs = cfg["prepare_inputs"](processor, messages, tools, model)
+    if print_messages:
+        print(messages)
+
+    # Render the chat template to text (no tokenization) so we can see what the model sees
+    prompt_text = processor.apply_chat_template(
+        messages, tools=tools, add_generation_prompt=True, tokenize=False
+    )
+    if print_prompt_text:
+        print(prompt_text)
+
+    # Tokenize and move the tensors to the device
+    # The chat template for both model families starts the text with <bos>;
+    # add_special_tokens=False prevents FunctionGemma's tokenizer from adding a second <bos>
+    inputs = processor(text=prompt_text, add_special_tokens=False, return_tensors="pt").to(model.device)
 
     with torch.no_grad():
-        out = model.generate(
-            **inputs, max_new_tokens=max_new_tokens, **cfg["generate_kwargs"](processor)
+        output_ids = model.generate(
+            **inputs, max_new_tokens=max_new_tokens, **family_config["generate_kwargs"](processor)
         )
 
-    generated_tokens = out[0][len(inputs["input_ids"][0]):]
-    text = processor.decode(generated_tokens, **cfg["decode_kwargs"])
-    calls = cfg["extract_tool_calls"](text)
-    return calls if calls else None
+    # generate() returns the prompt followed by the new tokens; keep the new tokens
+    generated_ids = output_ids[0][len(inputs["input_ids"][0]):]
+    generated_text = processor.decode(generated_ids, **family_config["decode_kwargs"])
+    if print_generated_text:
+        print(generated_text)
+
+    tool_calls = family_config["extract_tool_calls"](generated_text)
+    return tool_calls if tool_calls else None
 
 # The main interface
 
-def ask(prompt):
+def ask(user_text, **print_options):
     """
     Generates tool calls and runs calculation functions based on the prompt
 
     Args:
-        prompt: user's prompt
+        user_text: user's prompt
 
     Returns:
         None (prints tool call and calculation result)
     """
 
-    family = detect_model_family(GEMMA_MODEL_ID)
-    
     # Generate tool calls
-    calls = run_inference(model, processor, family, tools, prompt)
-
-    if calls:
+    tool_calls = run_inference(user_text, **print_options)
+    if tool_calls:
         # Print the function call and the result
-        for c in calls:
-            print(c)
-            result = globals()[c['name']](**c['arguments'])
-            print(result)
-
+        tool_functions = {f.__name__: f for f in tools}
+        for call in tool_calls:
+            print(call)
+            print(tool_functions[call["name"]](**call["arguments"]))
     else:
         print("--- no tool call generated ---")
 
+
+# Example usage
+# Examples are not commented but placed in 'if' statements for easy copying
+
+# Prints function call and result
+if False:
+    ask("what's 2+2?", **VERBOSE)
+
+# Prints system and user messages and prompt and generated text for debugging
+if False:
+    VERBOSE = dict(print_messages=True, print_prompt_text=True, print_generated_text=True)
+    ask("what's 2+2?", **VERBOSE)
