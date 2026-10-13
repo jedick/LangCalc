@@ -19,7 +19,7 @@ GEMMA_MODEL_ID = "google/functiongemma-270m-it"
 #GEMMA_MODEL_ID = "jedick/functiongemma-langcalc-en.zh"
 
 # Load the processor (falls back to the tokenizer for text-only models) and model
-processor = AutoProcessor.from_pretrained(GEMMA_MODEL_ID, device_map="auto")
+processor = AutoProcessor.from_pretrained(GEMMA_MODEL_ID)
 model = AutoModelForCausalLM.from_pretrained(GEMMA_MODEL_ID, dtype="auto", device_map="auto")
 
 def run_inference(user_text, *, print_messages=False, print_prompt_text=False,
@@ -67,7 +67,8 @@ def run_inference(user_text, *, print_messages=False, print_prompt_text=False,
 
     # generate() returns the prompt followed by the new tokens; keep the new tokens
     generated_ids = output_ids[0][len(inputs["input_ids"][0]):]
-    generated_text = processor.decode(generated_ids, **family_config["decode_kwargs"])
+    # Keep special tokens so the tool-call tags are never stripped and the stop token is visible
+    generated_text = processor.decode(generated_ids, skip_special_tokens=False)
     if print_generated_text:
         print(generated_text)
 

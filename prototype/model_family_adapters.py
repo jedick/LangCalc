@@ -70,19 +70,12 @@ FAMILY_CONFIGS = {
         "system_role": "developer",
         "system_message": "You are a model that can do function calling with the following functions",
         "extract_tool_calls": extract_tool_calls_functiongemma,
-        # FunctionGemma's function-call tags survive skip_special_tokens=True
-        # (they aren't registered as special tokens), so we can decode cleanly.
-        "decode_kwargs": {"skip_special_tokens": True},
         "generate_kwargs": lambda processor: {"pad_token_id": processor.eos_token_id},
     },
     "gemma4": {
         "system_role": "system",
         "system_message": "You are a model that can do function calling for a calculator app.",
         "extract_tool_calls": extract_tool_calls_gemma4,
-        # Gemma 4's tool-call tags ARE special tokens, so we need
-        # skip_special_tokens=False or the tags get stripped before we can
-        # parse them.
-        "decode_kwargs": {"skip_special_tokens": False},
         "generate_kwargs": lambda processor: {},
     },
 }
