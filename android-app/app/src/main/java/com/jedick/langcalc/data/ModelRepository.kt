@@ -9,6 +9,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.suspendCancellableCoroutine
 import okhttp3.Call
 import okhttp3.Callback
@@ -49,10 +50,27 @@ class ModelRepository(context: Context, private val settings: AppSettings) {
 
   fun modelSizeBytes(): Long = if (modelFile.exists()) modelFile.length() else 0L
 
+  /** When the model file was last written (the end of the last download), or null if none. */
+  fun downloadedAtMillis(): Long? = if (isDownloaded()) modelFile.lastModified() else null
+
   fun delete(): Boolean {
     settings.downloadedModelETag = null
-    return !modelFile.exists() || modelFile.delete()
+    val deleted = !modelFile.exists() || modelFile.delete()
+    // Also remove anything else in the models folder, such as a weight cache left by an earlier
+    // version of the app (see the cacheDir setting in LangCalcEngine).
+    modelDir.listFiles()?.forEach { it.deleteRecursively() }
+    return deleted
   }
+
+  /**
+   * Deletes everything in the models folder except the model file: leftover cache files from an
+   * earlier version of the app, and the partial file of an interrupted download. Call it before
+   * loading or downloading the model, not while a download is running.
+   */
+  suspend fun removeLeftoverFiles() =
+    withContext(Dispatchers.IO) {
+      modelDir.listFiles()?.filter { it.name != ModelConstants.FILENAME }?.forEach { it.deleteRecursively() }
+    }
 
   /** Downloads the model to a temp file and atomically renames it into place on success. */
   fun download(): Flow<DownloadState> =

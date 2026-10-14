@@ -1,5 +1,6 @@
 package com.jedick.langcalc.ui.chat
 
+import androidx.compose.foundation.text.input.TextFieldState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -9,6 +10,14 @@ import com.jedick.langcalc.engine.LangCalcEngine
 import com.jedick.langcalc.engine.SendResult
 import com.jedick.langcalc.engine.nextCalcTurnId
 import com.jedick.langcalc.engine.withExpression
+
+/** Which keyboard the "Ask for a calculation" input uses. */
+enum class KeyboardMode {
+  /** The calculator keypad pinned at the bottom of the screen. This is the default. */
+  CALCULATOR,
+  /** The Android keyboard, for typing words. */
+  SYSTEM,
+}
 
 /**
  * Chat list state and the send/edit logic. A plain class (not an androidx ViewModel) for the same
@@ -28,12 +37,22 @@ class ChatState(private val engine: LangCalcEngine) {
 
   var errorMessage by mutableStateOf<String?>(null)
 
-  /** Sends [userText] to the model and appends a new turn once it resolves. */
-  suspend fun send(userText: String) {
+  /** The "Ask for a calculation" input. Kept here so its text survives visits to other screens. */
+  val inputField = TextFieldState()
+
+  var keyboardMode by mutableStateOf(KeyboardMode.CALCULATOR)
+
+  /**
+   * Sends [userText] to the model and appends a new turn once it resolves.
+   *
+   * [speechLanguageTag] is the speech-recognition language (BCP-47) if the request was spoken with
+   * a language chosen; it is kept on the turn so the "Declined request" text can follow it.
+   */
+  suspend fun send(userText: String, speechLanguageTag: String? = null) {
     if (userText.isBlank() || processing) return
 
     val turnId = nextCalcTurnId()
-    turns = turns + CalcTurn(id = turnId, userText = userText, status = CalcTurnStatus.PENDING)
+    turns = turns + CalcTurn(id = turnId, userText = userText, status = CalcTurnStatus.PENDING, speechLanguageTag = speechLanguageTag)
     processing = true
     editingTurnId = null
 

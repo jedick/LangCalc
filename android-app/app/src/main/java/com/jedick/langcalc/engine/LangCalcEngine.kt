@@ -67,6 +67,10 @@ class LangCalcEngine {
             EngineConfig(
               modelPath = modelPath,
               backend = Backend.CPU(), // This checkpoint's allowlist entry lists "cpu" only.
+              // By default LiteRT-LM writes a weight cache (about the size of the model) next to
+              // the model file. ":nocache" turns that off, trading a slower model load for not
+              // storing a second copy of the weights.
+              cacheDir = ":nocache",
             )
           )
         newEngine.initialize()

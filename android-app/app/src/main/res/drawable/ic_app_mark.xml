@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The app icon for use inside the app: the launcher icon's speech bubble on a teal rounded
+     square. The launcher icon (ic_launcher_foreground + ic_launcher_background) is the same mark
+     but smaller, with extra margin for the adaptive-icon mask. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <path
+        android:fillColor="#12896B"
+        android:pathData="M44,0 L156,0 A44,44 0 0 1 200,44 L200,156 A44,44 0 0 1 156,200 L44,200 A44,44 0 0 1 0,156 L0,44 A44,44 0 0 1 44,0 Z" />
+    <group
+        android:pivotX="100"
+        android:pivotY="98"
+        android:scaleX="0.78"
+        android:scaleY="0.78">
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54,38 L146,38 A24,24 0 0 1 170,62 L170,98 A24,24 0 0 1 146,122 L100,122 L78,158 L70,122 L54,122 A24,24 0 0 1 30,98 L30,62 A24,24 0 0 1 54,38 Z" />
+        <path
+            android:fillColor="#12896B"
+            android:pathData="M77,58 L123,58 A7,7 0 0 1 130,65 A7,7 0 0 1 123,72 L77,72 A7,7 0 0 1 70,65 A7,7 0 0 1 77,58 Z" />
+        <path
+            android:fillColor="#12896B"
+            android:pathData="M77,88 L123,88 A7,7 0 0 1 130,95 A7,7 0 0 1 123,102 L77,102 A7,7 0 0 1 70,95 A7,7 0 0 1 77,88 Z" />
+    </group>
+</vector>

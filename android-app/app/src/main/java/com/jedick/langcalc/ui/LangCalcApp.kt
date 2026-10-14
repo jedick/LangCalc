@@ -19,6 +19,8 @@ import com.jedick.langcalc.ui.settings.SettingsScreen
 private sealed interface AppScreen {
   data object Intro : AppScreen
   data object Chat : AppScreen
+  /** The intro page opened from the chat screen's help button. */
+  data object Help : AppScreen
   data class Settings(val previous: AppScreen) : AppScreen
 }
 
@@ -62,6 +64,14 @@ fun LangCalcApp(
         state = chatState,
         settings = settings,
         onSettingsClick = { screenState = AppScreen.Settings(AppScreen.Chat) },
+        onHelpClick = { screenState = AppScreen.Help },
+      )
+    is AppScreen.Help ->
+      IntroScreen(
+        state = introState,
+        onSettingsClick = {},
+        onReady = {},
+        onBack = { screenState = AppScreen.Chat },
       )
     is AppScreen.Settings ->
       SettingsScreen(

@@ -39,6 +39,8 @@ data class CalcTurn(
   val errorType: CalcExpressionEvaluator.EvalErrorType? = null,
   /** The model's reason for a DECLINED turn, in the language of the request. Null if none given. */
   val declineReason: String? = null,
+  /** For a spoken request, the speech-recognition language used (BCP-47); null if typed or Auto. */
+  val speechLanguageTag: String? = null,
 )
 
 /** Re-evaluates [expression] and returns a copy of this turn with status/result updated to match. */

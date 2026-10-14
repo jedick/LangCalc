@@ -3,10 +3,11 @@
     <string name="app_name">LangCalc</string>
 
     <!-- Intro screen -->
+    <string name="intro_title">Intro</string>
     <string name="intro_tagline">A calculator you talk to</string>
     <string name="intro_body">LangCalc turns a spoken or typed request, in English or Chinese, into a calculation. A small language model fine-tuned for function calling (FunctionGemma) reads your request and picks the right operation. Everything runs on this device \u2014 nothing is sent to a server.</string>
     <string name="intro_model_label">Model</string>
-    <string name="intro_model_name">FunctionGemma (fine-tuned, 270M, ~%1$s)</string>
+    <string name="intro_model_name">FunctionGemma (fine-tuned, ~%1$s)</string>
     <string name="intro_download_button">Download model</string>
     <string name="intro_downloading_button">Downloading\u2026 %1$d%%</string>
     <string name="intro_continue_button">Open LangCalc</string>
@@ -15,7 +16,11 @@
     <string name="intro_cancel_button">Cancel</string>
     <string name="intro_download_error">Couldn\'t download the model: %1$s</string>
     <string name="intro_load_error">Couldn\'t load the model: %1$s</string>
-    <string name="intro_wifi_hint">This is about %1$s. A Wi-Fi connection is recommended.</string>
+    <string name="intro_wifi_hint">A Wi-Fi connection is recommended.</string>
+
+    <string name="intro_project_link">LangCalc project page</string>
+    <string name="intro_status_loaded">Model loaded</string>
+    <string name="intro_status_downloaded">Downloaded %1$s</string>
 
     <!-- Chat screen -->
     <string name="chat_welcome_title">Voice Calculator</string>
@@ -37,7 +42,13 @@
     <string name="chat_eval_error">Couldn\'t evaluate that</string>
     <string name="chat_divide_by_zero">Can\u2019t divide by zero</string>
     <string name="chat_inference_error">Inference failed. Try again, or reset the model from Settings.</string>
+    <string name="chat_input_hint">Type here</string>
     <string name="chat_input_placeholder">Ask for a calculation\u2026</string>
+    <string name="chat_help_content_description">Help</string>
+    <string name="chat_copied">Copied</string>
+    <string name="chat_keyboard_to_system">Switch to the Android keyboard</string>
+    <string name="chat_keyboard_to_calculator">Switch to the calculator keyboard</string>
+    <string name="chat_voice_language_content_description">Voice input language</string>
     <string name="chat_mic_content_description">Tap to speak</string>
     <string name="chat_send_content_description">Send</string>
     <string name="chat_cancel_edit">Cancel</string>
@@ -56,11 +67,6 @@
     <string name="settings_language_hint">Changes the interface only. The model understands English and Chinese either way.</string>
     <string name="settings_lang_en">English</string>
     <string name="settings_lang_zh">\u4E2D\u6587</string>
-    <string name="settings_section_voice">Voice input language</string>
-    <string name="settings_voice_hint">Sets the language the on-device speech recognizer listens for. \u201CAuto\u201D uses your device\u2019s default recognition language, which may not match the app language.</string>
-    <string name="settings_voice_auto">Auto (device default)</string>
-    <string name="settings_voice_en">English</string>
-    <string name="settings_voice_zh">Chinese</string>
     <string name="settings_section_model">Model</string>
     <string name="settings_model_status_downloaded">Downloaded \u2014 %1$s on device</string>
     <string name="settings_model_status_not_downloaded">Not downloaded</string>

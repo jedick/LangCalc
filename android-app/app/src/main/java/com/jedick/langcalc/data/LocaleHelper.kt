@@ -30,10 +30,22 @@ object LocaleHelper {
   }
 
   /**
-   * Guesses the language of a request from its text: Chinese if it contains any Han character,
-   * English otherwise. Returns an [AppLanguage] tag so it can be passed to [getString].
+   * The language of a request, as an [AppLanguage] tag that can be passed to [getString].
+   *
+   * A spoken request uses the speech-recognition language chosen for it ([speechLanguageTag], a
+   * BCP-47 tag such as "zh-CN") if that is English or Chinese. Otherwise (typed requests, Auto, or
+   * another language) this guesses from the text: Chinese if it contains any Han character,
+   * English if not. The app's interface language is deliberately not used.
    */
-  fun requestLanguageTag(text: String): String =
+  fun requestLanguageTag(text: String, speechLanguageTag: String? = null): String {
+    when (speechLanguageTag?.let { Locale.forLanguageTag(it).language }) {
+      AppLanguage.ENGLISH.tag -> return AppLanguage.ENGLISH.tag
+      AppLanguage.CHINESE.tag -> return AppLanguage.CHINESE.tag
+    }
+    return guessLanguageTag(text)
+  }
+
+  private fun guessLanguageTag(text: String): String =
     if (text.codePoints().anyMatch { Character.UnicodeScript.of(it) == Character.UnicodeScript.HAN }) {
       AppLanguage.CHINESE.tag
     } else {

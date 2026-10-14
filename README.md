@@ -81,7 +81,8 @@ These tests suggest that a single fine-tuned model can be deployed on edge devic
 ✅ Fine-tuned FunctionGemma model\
 &emsp;&emsp;🚧 Multilingual support (currently English and Chinese; more languages planned)\
 ✅ Working demo via Google AI Edge Gallery\
-⬜ Standalone Android app
+✅ Standalone Android app \
+&emsp;&emsp;🚧 Testing and public release
 
 ## Repository layout
 

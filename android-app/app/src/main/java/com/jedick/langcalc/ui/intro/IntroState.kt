@@ -18,6 +18,9 @@ sealed interface IntroPhase {
   data class LoadError(val message: String) : IntroPhase
 }
 
+/** What the intro screen shows about a model that is already on the device. */
+data class DownloadedModelInfo(val sizeBytes: Long, val downloadedAtMillis: Long?)
+
 /**
  * Holds the intro screen's state and the download-then-load sequence. A plain class rather than an
  * androidx ViewModel: it's `remember`-ed once in [com.jedick.langcalc.ui.LangCalcApp] and the
@@ -28,7 +31,17 @@ class IntroState(private val modelRepository: ModelRepository, private val engin
   var phase by mutableStateOf<IntroPhase>(IntroPhase.Checking)
     private set
 
+  /** Size and download date of the model on disk, or null if there is none. */
+  fun downloadedModelInfo(): DownloadedModelInfo? =
+    if (modelRepository.isDownloaded()) {
+      DownloadedModelInfo(modelRepository.modelSizeBytes(), modelRepository.downloadedAtMillis())
+    } else {
+      null
+    }
+
   suspend fun checkInitialState() {
+    // Clears cache files from earlier versions of the app and partial downloads.
+    modelRepository.removeLeftoverFiles()
     if (modelRepository.isDownloaded()) {
       loadModel()
     } else {

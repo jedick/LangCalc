@@ -47,9 +47,12 @@ These steps build the app and install it on an Android device, using the command
 instead of Android Studio. If you already use Android Studio, you can skip step 1 and just open
 the `android-app/` folder as a project; it manages the SDK and Gradle wrapper for you.
 
+0. **Make sure the model is available.**
+   - Check for the LiteRT-LM model (`langcalc_q8_ekv1024.litertlm`) on [Hugging Face](https://huggingface.co/jedick/functiongemma-langcalc-en.zh/tree/main).
+   - If it isn't there, use [convert_to_litertlm.py](https://github.com/jedick/LangCalc/blob/main/model/scripts/convert_to_litertlm.py) to create it.
 1. **Set up the development environment.**
-   - Install a JDK (17 or newer) and `adb` from your OS package manager (the `adb` package is
-     `android-tools` on Slackware).
+   - Install a JDK (17 or newer) and `adb` from your OS package manager
+     (the `adb` package is `android-tools` on Slackware).
    - Download the Android command line tools from <https://developer.android.com/studio/index.html>
      (look for "Command line tools only") and extract them.
      The SDK manager expects them in `cmdline-tools/latest/`

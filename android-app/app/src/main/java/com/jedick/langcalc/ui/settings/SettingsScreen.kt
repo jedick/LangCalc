@@ -36,14 +36,12 @@ import androidx.compose.ui.unit.dp
 import com.jedick.langcalc.BuildConfig
 import com.jedick.langcalc.R
 import com.jedick.langcalc.data.AppLanguage
+import com.jedick.langcalc.data.AppLinks
 import com.jedick.langcalc.data.AppSettings
-import com.jedick.langcalc.data.AsrLanguage
 import com.jedick.langcalc.data.ModelRepository
 import com.jedick.langcalc.data.UpdateCheckResult
 import com.jedick.langcalc.ui.common.AppTopBar
 import kotlinx.coroutines.launch
-
-private const val SOURCE_URL = "https://github.com/jedick/LangCalc"
 
 private sealed interface UpdateUiState {
   data object Idle : UpdateUiState
@@ -66,7 +64,6 @@ fun SettingsScreen(
   val scope = rememberCoroutineScope()
 
   var language by remember { mutableStateOf(settings.language) }
-  var asrLanguage by remember { mutableStateOf(settings.asrLanguage) }
   var updateState by remember { mutableStateOf<UpdateUiState>(UpdateUiState.Idle) }
   var showDeleteConfirm by remember { mutableStateOf(false) }
   val isDownloaded = modelRepository.isDownloaded()
@@ -105,40 +102,6 @@ fun SettingsScreen(
         }
       }
       HintText(stringResource(R.string.settings_language_hint))
-
-      Spacer(modifier = Modifier.height(24.dp))
-      HorizontalDivider()
-      Spacer(modifier = Modifier.height(24.dp))
-
-      // --- Voice input language ---
-      SettingsSectionTitle(stringResource(R.string.settings_section_voice))
-      Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-        VoiceLanguageOption(
-          label = stringResource(R.string.settings_voice_auto),
-          selected = asrLanguage == AsrLanguage.AUTO,
-          onClick = {
-            asrLanguage = AsrLanguage.AUTO
-            settings.asrLanguage = AsrLanguage.AUTO
-          },
-        )
-        VoiceLanguageOption(
-          label = stringResource(R.string.settings_voice_en),
-          selected = asrLanguage == AsrLanguage.ENGLISH,
-          onClick = {
-            asrLanguage = AsrLanguage.ENGLISH
-            settings.asrLanguage = AsrLanguage.ENGLISH
-          },
-        )
-        VoiceLanguageOption(
-          label = stringResource(R.string.settings_voice_zh),
-          selected = asrLanguage == AsrLanguage.CHINESE,
-          onClick = {
-            asrLanguage = AsrLanguage.CHINESE
-            settings.asrLanguage = AsrLanguage.CHINESE
-          },
-        )
-      }
-      HintText(stringResource(R.string.settings_voice_hint))
 
       Spacer(modifier = Modifier.height(24.dp))
       HorizontalDivider()
@@ -200,7 +163,7 @@ fun SettingsScreen(
       )
       Spacer(modifier = Modifier.height(4.dp))
       TextButton(
-        onClick = { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(SOURCE_URL))) },
+        onClick = { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(AppLinks.PROJECT_URL))) },
         contentPadding = PaddingValues(0.dp),
       ) {
         Text(stringResource(R.string.settings_source_link))
@@ -268,15 +231,6 @@ private fun HintText(text: String) {
     color = MaterialTheme.colorScheme.onSurfaceVariant,
     modifier = Modifier.padding(top = 6.dp),
   )
-}
-
-@Composable
-private fun VoiceLanguageOption(label: String, selected: Boolean, onClick: () -> Unit) {
-  if (selected) {
-    Button(onClick = onClick, modifier = Modifier.fillMaxWidth()) { Text(label) }
-  } else {
-    OutlinedButton(onClick = onClick, modifier = Modifier.fillMaxWidth()) { Text(label) }
-  }
 }
 
 @Composable

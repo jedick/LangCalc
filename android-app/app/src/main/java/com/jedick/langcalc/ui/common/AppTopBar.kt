@@ -2,6 +2,7 @@ package com.jedick.langcalc.ui.common
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.HelpOutline
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -15,13 +16,22 @@ import com.jedick.langcalc.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AppTopBar(title: String = "", onSettingsClick: (() -> Unit)? = null, onBackClick: (() -> Unit)? = null) {
+fun AppTopBar(
+  title: String = "",
+  onSettingsClick: (() -> Unit)? = null,
+  onBackClick: (() -> Unit)? = null,
+  onHelpClick: (() -> Unit)? = null,
+) {
   CenterAlignedTopAppBar(
     title = { Text(title) },
     navigationIcon = {
       if (onBackClick != null) {
         IconButton(onClick = onBackClick) {
           Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.settings_back_content_description))
+        }
+      } else if (onHelpClick != null) {
+        IconButton(onClick = onHelpClick) {
+          Icon(Icons.AutoMirrored.Filled.HelpOutline, contentDescription = stringResource(R.string.chat_help_content_description))
         }
       }
     },
