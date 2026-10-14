@@ -41,6 +41,11 @@ class ChatState(private val engine: LangCalcEngine) {
       is SendResult.Resolved -> {
         turns = turns.map { turn -> if (turn.id == turnId) turn.withExpression(result.action.toExpression()) else turn }
       }
+      is SendResult.Declined -> {
+        turns = turns.map { turn ->
+          if (turn.id == turnId) turn.copy(status = CalcTurnStatus.DECLINED, declineReason = result.reason) else turn
+        }
+      }
       is SendResult.NoFunction -> {
         turns = turns.map { turn -> if (turn.id == turnId) turn.copy(status = CalcTurnStatus.NO_FUNCTION) else turn }
       }

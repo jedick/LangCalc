@@ -22,15 +22,24 @@ private val KEY_ROWS =
     listOf("7", "8", "9", "/"),
     listOf("4", "5", "6", "*"),
     listOf("1", "2", "3", "-"),
-    listOf("0", ".", "+", ""),
+    listOf("0", ".", "+", "%"),
   )
 
 /**
  * A minimal numeric keypad for editing the Calculator field -- plain Compose buttons, no extra
  * libraries required.
+ *
+ * The % key does not type a character. It calls [onPercent] to toggle the percent form of the
+ * last operation (see PercentKey) and is disabled when [percentEnabled] is false.
  */
 @Composable
-fun CalculatorKeypad(onKeyPress: (String) -> Unit, onBackspace: () -> Unit, onClear: () -> Unit) {
+fun CalculatorKeypad(
+  onKeyPress: (String) -> Unit,
+  onBackspace: () -> Unit,
+  onClear: () -> Unit,
+  percentEnabled: Boolean,
+  onPercent: () -> Unit,
+) {
   Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
     for (row in KEY_ROWS) {
       Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -44,9 +53,11 @@ fun CalculatorKeypad(onKeyPress: (String) -> Unit, onBackspace: () -> Unit, onCl
               when (key) {
                 "C" -> onClear()
                 "\u232B" -> onBackspace()
+                "%" -> onPercent()
                 else -> onKeyPress(key)
               }
             },
+            enabled = key != "%" || percentEnabled,
             contentPadding = PaddingValues(vertical = 12.dp),
             modifier = Modifier.weight(1f),
           ) {

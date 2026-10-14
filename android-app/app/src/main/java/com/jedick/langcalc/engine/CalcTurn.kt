@@ -14,6 +14,8 @@ enum class CalcTurnStatus {
   RESOLVED,
   /** No function call was recognized; the Calculator field is left blank for manual entry. */
   NO_FUNCTION,
+  /** The model called decline(); the Calculator field is left blank like NO_FUNCTION. */
+  DECLINED,
   /** The current expression fails to evaluate (bad edit, divide-by-zero, or an inference error). */
   ERROR,
 }
@@ -35,6 +37,8 @@ data class CalcTurn(
   val expression: String = "",
   val resultText: String = "",
   val errorType: CalcExpressionEvaluator.EvalErrorType? = null,
+  /** The model's reason for a DECLINED turn, in the language of the request. Null if none given. */
+  val declineReason: String? = null,
 )
 
 /** Re-evaluates [expression] and returns a copy of this turn with status/result updated to match. */

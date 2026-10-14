@@ -2,6 +2,7 @@ package com.jedick.langcalc.data
 
 import android.content.Context
 import android.content.res.Configuration
+import androidx.annotation.StringRes
 import java.util.Locale
 
 /**
@@ -17,6 +18,28 @@ import java.util.Locale
  * do it.
  */
 object LocaleHelper {
+  /**
+   * Looks up a string in the language of [languageTag] without touching the app's interface
+   * language (unlike [wrap], this does not call Locale.setDefault). Used for text that follows
+   * the language of the user's request instead of the interface language.
+   */
+  fun getString(context: Context, languageTag: String, @StringRes resId: Int, vararg args: Any): String {
+    val config = Configuration(context.resources.configuration)
+    config.setLocale(Locale.forLanguageTag(languageTag))
+    return context.createConfigurationContext(config).getString(resId, *args)
+  }
+
+  /**
+   * Guesses the language of a request from its text: Chinese if it contains any Han character,
+   * English otherwise. Returns an [AppLanguage] tag so it can be passed to [getString].
+   */
+  fun requestLanguageTag(text: String): String =
+    if (text.codePoints().anyMatch { Character.UnicodeScript.of(it) == Character.UnicodeScript.HAN }) {
+      AppLanguage.CHINESE.tag
+    } else {
+      AppLanguage.ENGLISH.tag
+    }
+
   fun wrap(context: Context, languageTag: String): Context {
     val locale = Locale.forLanguageTag(languageTag)
     Locale.setDefault(locale)

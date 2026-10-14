@@ -11,11 +11,29 @@ enum class CalcOperator(val symbol: String) {
   DIVIDE("/"),
 }
 
-/** A recognized function call: one operator and its two operands. */
-data class CalcAction(val operator: CalcOperator, val x: Double, val y: Double) {
-  /** Renders this call as an editable expression for the Calculator field, e.g. "2 * 20". */
-  fun toExpression(): String = "${formatOperand(x)} ${operator.symbol} ${formatOperand(y)}"
+/** What the model asked the app to do with a tool call. */
+sealed interface ModelAction
+
+/**
+ * A recognized calculation: one operator and its two operands.
+ *
+ * [percent] is true for the percent functions, where the second operand is a percentage of the
+ * first: add_percent is (ADD, percent), subtract_percent is (SUBTRACT, percent) and percent_of is
+ * (MULTIPLY, percent). There is no percent form of DIVIDE.
+ */
+data class CalcAction(
+  val operator: CalcOperator,
+  val x: Double,
+  val y: Double,
+  val percent: Boolean = false,
+) : ModelAction {
+  /** Renders this call as an editable expression for the Calculator field, e.g. "2 * 20" or "50 + 30%". */
+  fun toExpression(): String =
+    "${formatOperand(x)} ${operator.symbol} ${formatOperand(y)}" + if (percent) "%" else ""
 }
+
+/** The model declined the request (decline function). [reason] is null if none was given. */
+data class DeclineAction(val reason: String?) : ModelAction
 
 /** Formats a Double without a trailing ".0" for whole numbers, e.g. 20.0 -> "20". */
 fun formatOperand(value: Double): String =

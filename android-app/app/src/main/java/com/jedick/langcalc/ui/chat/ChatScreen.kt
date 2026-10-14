@@ -62,9 +62,11 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import com.jedick.langcalc.R
 import com.jedick.langcalc.data.AppSettings
+import com.jedick.langcalc.data.LocaleHelper
 import com.jedick.langcalc.engine.CalcExpressionEvaluator.EvalErrorType
 import com.jedick.langcalc.engine.CalcTurn
 import com.jedick.langcalc.engine.CalcTurnStatus
+import com.jedick.langcalc.engine.PercentKey
 import com.jedick.langcalc.speech.SpeechInput
 import com.jedick.langcalc.ui.common.AppTopBar
 import kotlinx.coroutines.launch
@@ -238,8 +240,15 @@ private fun CalcTurnRow(
         CalcFieldLabel(stringResource(R.string.chat_result_label))
         Text(
           resultTextFor(turn),
-          style = MaterialTheme.typography.headlineMedium,
-          color = if (turn.status == CalcTurnStatus.ERROR) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurface,
+          style =
+            if (turn.status == CalcTurnStatus.DECLINED) MaterialTheme.typography.titleMedium
+            else MaterialTheme.typography.headlineMedium,
+          color =
+            when (turn.status) {
+              CalcTurnStatus.ERROR -> MaterialTheme.colorScheme.error
+              CalcTurnStatus.DECLINED -> MaterialTheme.colorScheme.onSurfaceVariant
+              else -> MaterialTheme.colorScheme.onSurface
+            },
           modifier = Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 10.dp),
         )
       }
@@ -256,9 +265,29 @@ private fun resultTextFor(turn: CalcTurn): String =
         EvalErrorType.SYNTAX -> stringResource(R.string.chat_eval_error)
         null -> stringResource(R.string.chat_inference_error)
       }
+    CalcTurnStatus.DECLINED -> declinedText(turn)
     CalcTurnStatus.NO_FUNCTION -> if (turn.expression.isEmpty()) stringResource(R.string.chat_no_function_result) else turn.resultText
     else -> turn.resultText
   }
+
+/**
+ * "Declined request: <reason>" (or just "Declined request" without a reason). This follows the
+ * language of the request, not the interface language, since the reason itself comes from the
+ * model in the request's language.
+ */
+@Composable
+private fun declinedText(turn: CalcTurn): String {
+  val context = LocalContext.current
+  return remember(context, turn.userText, turn.declineReason) {
+    val tag = LocaleHelper.requestLanguageTag(turn.userText)
+    val reason = turn.declineReason
+    if (reason == null) {
+      LocaleHelper.getString(context, tag, R.string.chat_declined_request)
+    } else {
+      LocaleHelper.getString(context, tag, R.string.chat_declined_request_reason, reason)
+    }
+  }
+}
 
 @Composable
 private fun CalcFieldLabel(text: String) {
@@ -294,6 +323,8 @@ private fun EditableExpressionField(initialValue: String, onCommit: (String) -> 
       onKeyPress = { key -> text += key },
       onBackspace = { if (text.isNotEmpty()) text = text.dropLast(1) },
       onClear = { text = "" },
+      percentEnabled = PercentKey.canToggle(text),
+      onPercent = { text = PercentKey.toggle(text) },
     )
     Spacer(modifier = Modifier.height(8.dp))
     Row(horizontalArrangement = Arrangement.End, modifier = Modifier.fillMaxWidth()) {
@@ -366,4 +397,5 @@ private fun calcOperationItems(): List<Pair<String, String>> =
     stringResource(R.string.chat_op_subtract) to "\u2212",
     stringResource(R.string.chat_op_multiply) to "\u00D7",
     stringResource(R.string.chat_op_divide) to "\u00F7",
+    stringResource(R.string.chat_op_percent) to "%",
   )

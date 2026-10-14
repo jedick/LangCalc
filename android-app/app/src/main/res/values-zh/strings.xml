@@ -25,11 +25,14 @@
     <string name="chat_op_subtract">减</string>
     <string name="chat_op_multiply">乘</string>
     <string name="chat_op_divide">除</string>
+    <string name="chat_op_percent">百分比</string>
     <string name="chat_example_1">2 加 20</string>
     <string name="chat_example_2">2 减去 20</string>
     <string name="chat_calculator_label">算式</string>
     <string name="chat_result_label">结果</string>
     <string name="chat_expression_placeholder">点击输入算式</string>
+    <string name="chat_declined_request">已拒绝请求</string>
+    <string name="chat_declined_request_reason">已拒绝请求:%1$s</string>
     <string name="chat_no_function_result">\u2014</string>
     <string name="chat_eval_error">无法计算该算式</string>
     <string name="chat_divide_by_zero">不能除以零</string>

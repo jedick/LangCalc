@@ -81,6 +81,7 @@ the `android-app/` folder as a project; it manages the SDK and Gradle wrapper fo
    else, or install on more than one device.
 4. **Connect your device and install the APK.**
    Turn on wireless debugging: Settings - Developer options - Wireless debugging.
+   (Enable Developer options on your device first if you need to.)
    Then connect with `adb` (the port numbers differ between the two commands):
    ```
    adb pair HOST[:PORT] [PAIRING CODE]

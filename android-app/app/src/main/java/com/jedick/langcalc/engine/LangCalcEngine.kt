@@ -31,6 +31,7 @@ private const val MAX_OUTPUT_TOKENS = 1024
 /** What happened when a user request was sent to the model. */
 sealed interface SendResult {
   data class Resolved(val action: CalcAction) : SendResult
+  data class Declined(val reason: String?) : SendResult
   data object NoFunction : SendResult
   data class Error(val message: String) : SendResult
 }
@@ -48,7 +49,7 @@ sealed interface SendResult {
 class LangCalcEngine {
   // Filled by LangCalcTools.onFunctionCalled while a tool-calling turn runs. Cleared before every
   // prompt and read once inference for that prompt completes.
-  private val curActions = mutableListOf<CalcAction>()
+  private val curActions = mutableListOf<ModelAction>()
 
   private var engine: Engine? = null
   private var conversation: Conversation? = null
@@ -80,8 +81,8 @@ class LangCalcEngine {
     }
 
   /**
-   * Sends [userText] and returns the recognized [CalcAction], or [SendResult.NoFunction] /
-   * [SendResult.Error]. Always starts the next turn with a clean context, since each calculation
+   * Sends [userText] and returns the recognized [CalcAction], [SendResult.Declined], or
+   * [SendResult.NoFunction] / [SendResult.Error]. Always starts the next turn with a clean context, since each calculation
    * is independent (same approach as the Gallery task).
    */
   suspend fun send(userText: String): SendResult =
@@ -107,8 +108,12 @@ class LangCalcEngine {
           Log.e(TAG, "Inference failed", error)
           SendResult.Error(error.message ?: "Unknown error")
         }
-        curActions.isNotEmpty() -> SendResult.Resolved(curActions.first())
-        else -> SendResult.NoFunction
+        else ->
+          when (val action = curActions.firstOrNull()) {
+            is CalcAction -> SendResult.Resolved(action)
+            is DeclineAction -> SendResult.Declined(action.reason)
+            null -> SendResult.NoFunction
+          }
       }
     }
 

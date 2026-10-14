@@ -25,11 +25,14 @@
     <string name="chat_op_subtract">Subtract</string>
     <string name="chat_op_multiply">Multiply</string>
     <string name="chat_op_divide">Divide</string>
+    <string name="chat_op_percent">Percent</string>
     <string name="chat_example_1">2 plus 20</string>
     <string name="chat_example_2">take twenty away from two</string>
     <string name="chat_calculator_label">Calculator</string>
     <string name="chat_result_label">Result</string>
     <string name="chat_expression_placeholder">Tap to enter an expression</string>
+    <string name="chat_declined_request">Declined request</string>
+    <string name="chat_declined_request_reason">Declined request: %1$s</string>
     <string name="chat_no_function_result">\u2014</string>
     <string name="chat_eval_error">Couldn\'t evaluate that</string>
     <string name="chat_divide_by_zero">Can\u2019t divide by zero</string>
