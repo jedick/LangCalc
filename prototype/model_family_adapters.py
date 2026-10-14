@@ -2,7 +2,7 @@
 # 20261014 add attn_implementation="eager" for FunctionGemma
 
 # The two model families we support use different chat templates and different tags for tool calls:
-# "functiongemma": FunctionGemma-style models (e.g. the fine-tuned jedick/functiongemma-langcalc-en).
+# "functiongemma": FunctionGemma-style models (e.g. the fine-tuned jedick/functiongemma-langcalc-en.zh).
 #   Uses a "developer" role message, <start_function_call>/<end_function_call> tags,
 #   and <escape> for quoting string arguments. 
 # "gemma4": Gemma 4 models (e.g. google/gemma-4-E2B).

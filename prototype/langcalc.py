@@ -35,8 +35,8 @@ def run_inference(user_text, *, print_messages=False, print_prompt_text=False,
 
     Args:
         print_messages: print the system message and user message
-        print_text: print the full prompt as the model sees it
-        print_output_text: print the generated text
+        print_prompt_text: print the full prompt as the model sees it
+        print_generated_text: print the generated text
 
     Returns:
         Function call or None for no function call generated
@@ -62,10 +62,10 @@ def run_inference(user_text, *, print_messages=False, print_prompt_text=False,
     # add_special_tokens=False prevents FunctionGemma's tokenizer from adding a second <bos>
     inputs = processor(text=prompt_text, add_special_tokens=False, return_tensors="pt").to(model.device)
 
-    with torch.no_grad():
-        output_ids = model.generate(
-            **inputs, max_new_tokens=max_new_tokens, **family_config["generate_kwargs"](processor)
-        )
+    # Generate new tokens
+    output_ids = model.generate(
+        **inputs, max_new_tokens=max_new_tokens, **family_config["generate_kwargs"](processor)
+    )
 
     # generate() returns the prompt followed by the new tokens; keep the new tokens
     generated_ids = output_ids[0][len(inputs["input_ids"][0]):]

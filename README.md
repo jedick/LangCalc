@@ -53,7 +53,7 @@ The base FunctionGemma model performs poorly on English test prompts, achieving 
 Fine-tuning with English examples yields a large performance jump,
 and adding Chinese examples into the mix only slightly decreases the model's performance on English test data.
 
-<img src="https://chnosz.net/guest/LangCalc/langcalc-test-results_v05.png" alt="LangCalc test results" width="70%">
+<img src="https://chnosz.net/guest/LangCalc/langcalc-test-results_v05.png" alt="LangCalc test results" width="80%">
 
 A separate test split includes prompts with general knowledge, small talk, missing operands,
 and other requests that should be declined as they are not calculator requests.
