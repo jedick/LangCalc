@@ -1,7 +1,7 @@
 # LangCalc: voice-driven calculator with FunctionGemma
 # 20260812 jmd first version
 # 20261009 split out tools.py and add model_family_adapters.py
-# 20261013 add print arguments to see messages and text
+# 20261013 add print arguments to view messages and text
 
 from transformers import AutoProcessor, AutoModelForCausalLM
 import torch
@@ -18,9 +18,15 @@ from model_family_adapters import detect_model_family, FAMILY_CONFIGS
 GEMMA_MODEL_ID = "google/functiongemma-270m-it"
 #GEMMA_MODEL_ID = "jedick/functiongemma-langcalc-en.zh"
 
+# Get the model family and config
+family = detect_model_family(GEMMA_MODEL_ID)
+family_config = FAMILY_CONFIGS[family]
+
 # Load the processor (falls back to the tokenizer for text-only models) and model
 processor = AutoProcessor.from_pretrained(GEMMA_MODEL_ID)
-model = AutoModelForCausalLM.from_pretrained(GEMMA_MODEL_ID, dtype="auto", device_map="auto")
+model = AutoModelForCausalLM.from_pretrained(
+    GEMMA_MODEL_ID, dtype="auto", device_map="auto", **family_config["model_kwargs"]
+)
 
 def run_inference(user_text, *, print_messages=False, print_prompt_text=False,
                   print_generated_text=False, max_new_tokens=128):
@@ -35,10 +41,6 @@ def run_inference(user_text, *, print_messages=False, print_prompt_text=False,
     Returns:
         Function call or None for no function call generated
     """
-
-    # Get the model family and config
-    family = detect_model_family(GEMMA_MODEL_ID)
-    family_config = FAMILY_CONFIGS[family]
 
     # The "prompt" half of a prompt-completion pair; the model generates the completion
     messages = [
@@ -105,7 +107,7 @@ def ask(user_text, **print_options):
 
 # Prints function call and result
 if False:
-    ask("what's 2+2?", **VERBOSE)
+    ask("what's 2+2?")
 
 # Prints system and user messages and prompt and generated text for debugging
 if False:

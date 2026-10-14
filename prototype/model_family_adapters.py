@@ -1,22 +1,18 @@
-# Taken from model/notebooks/LangCalc-evaluation.ipynb 20261009
+# 20261009 adapted from model/notebooks/LangCalc-evaluation.ipynb
+# 20261014 add attn_implementation="eager" for FunctionGemma
 
-# The two model families we support use different chat templates and
-# different tags for tool calls:
-#   - "functiongemma": FunctionGemma-style models (e.g. the fine-tuned
-#     jedick/functiongemma-langcalc-en). Uses a "developer" role
-#     message, <start_function_call>/<end_function_call> tags, and
-#     <escape> for quoting string arguments. See LangCalc-inference.ipynb.
-#   - "gemma4": Gemma 4 models (e.g. google/gemma-4-E2B). Uses a "system"
-#     role message, <|tool_call>/<tool_call|> tags, and <|"|> for quoting
-#     string arguments, and attaches "tool_calls" and "tool_responses" to a
-#     single assistant message instead of a separate "tool" role message.
-#     See langcalc_gemma4.py.
-#
-# detect_model_family() guesses the family from the model id (currently:
-# anything with "gemma-4" in the id is treated as "gemma4", everything else
-# as "functiongemma"). If you evaluate a model that is neither, add a new
-# family entry to FAMILY_CONFIGS so its tags and message format match its
-# own chat template.
+# The two model families we support use different chat templates and different tags for tool calls:
+# "functiongemma": FunctionGemma-style models (e.g. the fine-tuned jedick/functiongemma-langcalc-en).
+#   Uses a "developer" role message, <start_function_call>/<end_function_call> tags,
+#   and <escape> for quoting string arguments. 
+# "gemma4": Gemma 4 models (e.g. google/gemma-4-E2B).
+#   Uses a "system" role message, <|tool_call>/<tool_call|> tags,
+#   and <|"|> for quoting string arguments. Attaches "tool_calls" and "tool_responses"
+#   to a single assistant message instead of a separate "tool" role message.
+
+# detect_model_family() guesses the family from the model id:
+# anything with "gemma-4" in the id is treated as "gemma4",
+# everything else as "functiongemma".
 
 import re
 
@@ -71,12 +67,15 @@ FAMILY_CONFIGS = {
         "system_message": "You are a model that can do function calling with the following functions",
         "extract_tool_calls": extract_tool_calls_functiongemma,
         "generate_kwargs": lambda processor: {"pad_token_id": processor.eos_token_id},
+        # FunctionGemma fine-tuning examples use eager attention; sdpa gives garbage first tokens for some batch shapes in evaluation
+        "model_kwargs": {"attn_implementation": "eager"},
     },
     "gemma4": {
         "system_role": "system",
         "system_message": "You are a model that can do function calling for a calculator app.",
         "extract_tool_calls": extract_tool_calls_gemma4,
         "generate_kwargs": lambda processor: {},
+        "model_kwargs": {},
     },
 }
 

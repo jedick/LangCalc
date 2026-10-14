@@ -51,13 +51,13 @@ covering scenarios such as whole numbers, decimals, currency, comparison idioms,
 
 The base FunctionGemma model performs poorly on English test prompts, achieving only 21% correct function calls.
 Fine-tuning with English examples yields a large performance jump,
-and adding Chinese examples into the mix further improves the model's performance on English test data.
+and adding Chinese examples into the mix only slightly decreases the model's performance on English test data.
 
-<img src="https://chnosz.net/guest/LangCalc/langcalc-test-results_v04.png" alt="LangCalc test results" width="70%">
+<img src="https://chnosz.net/guest/LangCalc/langcalc-test-results_v05.png" alt="LangCalc test results" width="70%">
 
 A separate test split includes prompts with general knowledge, small talk, missing operands,
 and other requests that should be declined as they are not calculator requests.
-The fine-tuned model correctly declines 98-99% of these requests.
+The fine-tuned model correctly declines 99% of these requests.
 In contrast, Gemma 4 E2B-it (not fine-tuned) incorrectly calls calculator functions for most of these prompts.
 
 **Percent correct responses for calculate and decline prompts in English and Chinese**
@@ -66,10 +66,10 @@ n.d. &ndash; not determined
 
 | Model | Calculate (en) | Calculate (zh) | Decline (en) | Decline (zh) |
 |-|-|-|-|-|
-| jedick/functiongemma-langcalc-en.zh | 75 | 83 | 98 | 99 |
-| jedick/functiongemma-langcalc-en | 72 | n.d. | 95 | nd. |
-| jedick/functiongemma-langcalc-zh | n.d. | 81 | n.d. | 98 |
-| google/gemma-4-E2B-it | 89 | 88 | 30 | 32 |
+| jedick/functiongemma-langcalc-en.zh | 81 | 87 | 99 | 99 |
+| jedick/functiongemma-langcalc-en | 85 | n.d. | 94 | nd. |
+| jedick/functiongemma-langcalc-zh | n.d. | 87 | n.d. | 98 |
+| google/gemma-4-E2B-it | 94 | 91 | 7 | 18 |
 
 The strong performance of the `en.zh` model fine-tuned on two languages extends to both English and Chinese test data.
 Fine-tuning a small model (FunctionGemma 270M) get most of the way to what a much larger base model (Gemma 4 E2B-it) can do on calculator prompts
